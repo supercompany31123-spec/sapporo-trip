@@ -11,6 +11,8 @@ const featuredSpots = allSpots.filter(s => s.data.featured).slice(0, 3);
 
 const allRestaurants = await getCollection('restaurants');
 const featuredRestaurants = allRestaurants.filter(r => r.data.featured).slice(0, 3);
+
+const BASE = '/sapporo-trip';
 ---
 
 <BaseLayout title="首頁">
@@ -24,8 +26,8 @@ const featuredRestaurants = allRestaurants.filter(r => r.data.featured).slice(0,
         <h1>探索札幌</h1>
         <p>北海道的美食與自然風光</p>
         <div class="hero-btns">
-          <a href="/spots" class="btn">景點推薦</a>
-          <a href="/restaurants" class="btn btn-outline">美食地圖</a>
+          <a href={`${BASE}/spots`} class="btn">景點推薦</a>
+          <a href={`${BASE}/restaurants`} class="btn btn-outline">美食地圖</a>
         </div>
       </div>
     </section>
@@ -47,7 +49,7 @@ const featuredRestaurants = allRestaurants.filter(r => r.data.featured).slice(0,
           ))}
         </div>
         <div class="section-footer">
-          <a href="/spots" class="btn-outline btn">看更多景點 →</a>
+          <a href={`${BASE}/spots`} class="btn-outline btn">看更多景點 →</a>
         </div>
       </div>
     </section>
@@ -70,7 +72,7 @@ const featuredRestaurants = allRestaurants.filter(r => r.data.featured).slice(0,
           ))}
         </div>
         <div class="section-footer">
-          <a href="/restaurants" class="btn-outline btn">看更多美食 →</a>
+          <a href={`${BASE}/restaurants`} class="btn-outline btn">看更多美食 →</a>
         </div>
       </div>
     </section>
@@ -83,7 +85,7 @@ const featuredRestaurants = allRestaurants.filter(r => r.data.featured).slice(0,
           札幌是北海道最大的城市，同時也是日本人口第五大的都市。這座城市以美食和自然景觀聞名，每年冬季舉辦的札幌雪祭更是聞名全球，吸引數百萬旅客前來。札幌同時也是前往北海道各地的重要交通樞紐，從新千歲機場搭乘火車約40分鐘即可抵達。城市的布局整齊有序，以大通公園為中心向東西延伸，適合步行或騎自行車遊覽。四季分明的气候讓札幌每個季節都有不同的風貌：春天的櫻花、夏天的啤酒花園、秋天的紅葉、冬天的雪景，每個時節都值得探索。
         </p>
         <div class="cta-row">
-          <a href="/spots" class="btn">開始探索</a>
+          <a href={`${BASE}/spots`} class="btn">開始探索</a>
         </div>
       </div>
     </section>

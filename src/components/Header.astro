@@ -1,13 +1,14 @@
 ---
+const BASE = '/sapporo-trip';
 ---
 
 <header class="site-header">
   <div class="container header-inner">
-    <a href="/" class="logo">札幌</a>
+    <a href={BASE} class="logo">札幌</a>
     <nav class="nav">
-      <a href="/" class="nav-link">首頁</a>
-      <a href="/spots" class="nav-link">景點</a>
-      <a href="/restaurants" class="nav-link">美食</a>
+      <a href={BASE} class="nav-link">首頁</a>
+      <a href={`${BASE}/spots`} class="nav-link">景點</a>
+      <a href={`${BASE}/restaurants`} class="nav-link">美食</a>
     </nav>
   </div>
 </header>

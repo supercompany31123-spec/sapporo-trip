@@ -10,11 +10,12 @@ interface Props {
 
 const { slug, name, description, category, image, image_credit } = Astro.props;
 const shortDesc = description.length > 80 ? description.slice(0, 80) + '…' : description;
+const BASE = '/sapporo-trip';
 ---
 
-<a href={`/spots/${slug}`} class="spot-card">
+<a href={`${BASE}/spots/${slug}`} class="spot-card">
   <div class="card-image">
-    <img src={image} alt={name} loading="lazy" />
+    <img src={`${BASE}${image}`} alt={name} loading="lazy" />
     <span class="category-tag">{category}</span>
   </div>
   <div class="card-body">

@@ -15,6 +15,7 @@ export async function getStaticPaths() {
 const { restaurant } = Astro.props;
 const { Content } = await render(restaurant);
 const displayName = restaurant.data.name_cn || restaurant.data.name;
+const BASE = '/sapporo-trip';
 ---
 
 <BaseLayout title={displayName} description={restaurant.data.description}>
@@ -22,7 +23,7 @@ const displayName = restaurant.data.name_cn || restaurant.data.name;
 
   <main>
     <div class="restaurant-hero">
-      <img src={restaurant.data.image} alt={restaurant.data.name} />
+      <img src={`${BASE}${restaurant.data.image}`} alt={restaurant.data.name} />
       <div class="hero-overlay"></div>
       <div class="hero-text">
         <span class="category-tag">{restaurant.data.category}</span>

@@ -14,6 +14,7 @@ export async function getStaticPaths() {
 
 const { spot } = Astro.props;
 const { Content } = await render(spot);
+const BASE = '/sapporo-trip';
 ---
 
 <BaseLayout title={spot.data.name} description={spot.data.description}>
@@ -21,7 +22,7 @@ const { Content } = await render(spot);
 
   <main>
     <div class="spot-hero">
-      <img src={spot.data.image} alt={spot.data.name} />
+      <img src={`${BASE}${spot.data.image}`} alt={spot.data.name} />
       <div class="hero-overlay"></div>
       <div class="hero-text">
         <span class="category-tag">{spot.data.category}</span>
