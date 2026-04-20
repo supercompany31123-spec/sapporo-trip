@@ -1,0 +1,263 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+export async function getStaticPaths() {
+  const spots = await getCollection('spots');
+  return spots.map(spot => ({
+    params: { slug: spot.data.slug },
+    props: { spot },
+  }));
+}
+
+const { spot } = Astro.props;
+const { Content } = await render(spot);
+---
+
+<BaseLayout title={spot.data.name} description={spot.data.description}>
+  <Header />
+
+  <main>
+    <div class="spot-hero">
+      <img src={spot.data.image} alt={spot.data.name} />
+      <div class="hero-overlay"></div>
+      <div class="hero-text">
+        <span class="category-tag">{spot.data.category}</span>
+        <h1>{spot.data.name}</h1>
+        <p>{spot.data.description}</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="content-grid">
+        <article class="markdown-content">
+          <Content />
+        </article>
+
+        <aside class="info-sidebar">
+          <div class="info-card">
+            <h3>基本資訊</h3>
+            <div class="info-item">
+              <span class="info-label">地址</span>
+              <span class="info-value">{spot.data.address}</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">交通方式</span>
+              <span class="info-value">{spot.data.transportation}</span>
+            </div>
+            {spot.data.opening_hours && (
+              <div class="info-item">
+                <span class="info-label">開放時間</span>
+                <span class="info-value">{spot.data.opening_hours}</span>
+              </div>
+            )}
+            {spot.data.official_url && (
+              <div class="info-item">
+                <span class="info-label">官方網站</span>
+                <a href={spot.data.official_url} target="_blank" rel="noopener" class="info-link">
+                  連結 →
+                </a>
+              </div>
+            )}
+          </div>
+
+          <div class="tags-card">
+            <h3>標籤</h3>
+            <div class="tags">
+              {spot.data.tags.map(tag => (
+                <span class="tag">{tag}</span>
+              ))}
+            </div>
+          </div>
+
+          <div class="credit-card">
+            <p class="credit">{spot.data.image_credit}</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .spot-hero {
+    position: relative;
+    height: 50vh;
+    min-height: 400px;
+    overflow: hidden;
+  }
+
+  .spot-hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(26,26,46,0.8) 0%, rgba(26,26,46,0.2) 60%);
+  }
+
+  .hero-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem;
+    color: white;
+  }
+
+  .category-tag {
+    display: inline-block;
+    background-color: var(--primary);
+    color: white;
+    font-size: 0.8rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    margin-bottom: 0.75rem;
+    font-weight: 500;
+  }
+
+  .hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+    opacity: 0.9;
+    max-width: 700px;
+    line-height: 1.6;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  .content-grid {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 3rem;
+    padding: 3rem 0;
+  }
+
+  .markdown-content {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #333;
+  }
+
+  .markdown-content :global(h2) {
+    font-size: 1.5rem;
+    margin: 2rem 0 1rem;
+    color: var(--text-dark);
+  }
+
+  .markdown-content :global(h3) {
+    font-size: 1.2rem;
+    margin: 1.5rem 0 0.75rem;
+    color: var(--text-dark);
+  }
+
+  .markdown-content :global(p) {
+    margin-bottom: 1rem;
+  }
+
+  .markdown-content :global(ul), .markdown-content :global(ol) {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+  }
+
+  .markdown-content :global(li) {
+    margin-bottom: 0.5rem;
+  }
+
+  .markdown-content :global(a) {
+    color: var(--primary);
+  }
+
+  .info-sidebar {
+    position: sticky;
+    top: 80px;
+    height: fit-content;
+  }
+
+  .info-card, .tags-card, .credit-card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    margin-bottom: 1.5rem;
+  }
+
+  .info-card h3, .tags-card h3 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--primary);
+  }
+
+  .info-item {
+    margin-bottom: 1rem;
+  }
+
+  .info-label {
+    display: block;
+    font-size: 0.8rem;
+    color: #888;
+    margin-bottom: 0.25rem;
+    font-weight: 500;
+  }
+
+  .info-value {
+    font-size: 0.9rem;
+    color: var(--text-dark);
+  }
+
+  .info-link {
+    color: var(--primary);
+    font-size: 0.9rem;
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .tag {
+    background-color: #f0ede8;
+    color: #555;
+    font-size: 0.8rem;
+    padding: 0.3rem 0.7rem;
+    border-radius: 20px;
+  }
+
+  .credit-card {
+    background: #f9f9f9;
+  }
+
+  .credit {
+    font-size: 0.75rem;
+    color: #888;
+  }
+
+  @media (max-width: 900px) {
+    .content-grid {
+      grid-template-columns: 1fr;
+    }
+    .info-sidebar {
+      position: static;
+    }
+    .hero-text h1 {
+      font-size: 1.8rem;
+    }
+  }
+</style>

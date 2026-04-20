@@ -1,0 +1,85 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import SpotCard from '../../components/SpotCard.astro';
+
+const allSpots = await getCollection('spots');
+---
+
+<BaseLayout title="景點推薦">
+  <Header />
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>札幌景點</h1>
+        <p>探索北海道的自然與人文風光</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="grid-3">
+          {allSpots.map(spot => (
+            <SpotCard
+              slug={spot.data.slug}
+              name={spot.data.name}
+              description={spot.data.description}
+              category={spot.data.category}
+              image={spot.data.image}
+              image_credit={spot.data.image_credit}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .page-header {
+    background-color: var(--secondary);
+    color: white;
+    padding: 3rem 0;
+    text-align: center;
+  }
+
+  .page-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .page-header p {
+    opacity: 0.8;
+    font-size: 1.1rem;
+  }
+
+  .section {
+    padding: 3rem 0;
+  }
+
+  .grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  @media (max-width: 900px) {
+    .grid-3 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 600px) {
+    .grid-3 {
+      grid-template-columns: 1fr;
+    }
+    .page-header h1 {
+      font-size: 1.8rem;
+    }
+  }
+</style>

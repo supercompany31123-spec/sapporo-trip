@@ -1,0 +1,202 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import SpotCard from '../components/SpotCard.astro';
+import RestaurantCard from '../components/RestaurantCard.astro';
+
+const allSpots = await getCollection('spots');
+const featuredSpots = allSpots.filter(s => s.data.featured).slice(0, 3);
+
+const allRestaurants = await getCollection('restaurants');
+const featuredRestaurants = allRestaurants.filter(r => r.data.featured).slice(0, 3);
+---
+
+<BaseLayout title="首頁">
+  <Header />
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1>探索札幌</h1>
+        <p>北海道的美食與自然風光</p>
+        <div class="hero-btns">
+          <a href="/spots" class="btn">景點推薦</a>
+          <a href="/restaurants" class="btn btn-outline">美食地圖</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Spots -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">精選景點</h2>
+        <div class="grid-3">
+          {featuredSpots.map(spot => (
+            <SpotCard
+              slug={spot.data.slug}
+              name={spot.data.name}
+              description={spot.data.description}
+              category={spot.data.category}
+              image={spot.data.image}
+              image_credit={spot.data.image_credit}
+            />
+          ))}
+        </div>
+        <div class="section-footer">
+          <a href="/spots" class="btn-outline btn">看更多景點 →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Restaurants -->
+    <section class="section alt-bg">
+      <div class="container">
+        <h2 class="section-title">精選美食</h2>
+        <div class="grid-3">
+          {featuredRestaurants.map(restaurant => (
+            <RestaurantCard
+              slug={restaurant.data.slug}
+              name={restaurant.data.name}
+              name_cn={restaurant.data.name_cn}
+              description={restaurant.data.description}
+              category={restaurant.data.category}
+              image={restaurant.data.image}
+              image_credit={restaurant.data.image_credit}
+            />
+          ))}
+        </div>
+        <div class="section-footer">
+          <a href="/restaurants" class="btn-outline btn">看更多美食 →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section">
+      <div class="container about-section">
+        <h2 class="section-title">關於札幌</h2>
+        <p class="about-text">
+          札幌是北海道最大的城市，同時也是日本人口第五大的都市。這座城市以美食和自然景觀聞名，每年冬季舉辦的札幌雪祭更是聞名全球，吸引數百萬旅客前來。札幌同時也是前往北海道各地的重要交通樞紐，從新千歲機場搭乘火車約40分鐘即可抵達。城市的布局整齊有序，以大通公園為中心向東西延伸，適合步行或騎自行車遊覽。四季分明的气候讓札幌每個季節都有不同的風貌：春天的櫻花、夏天的啤酒花園、秋天的紅葉、冬天的雪景，每個時節都值得探索。
+        </p>
+        <div class="cta-row">
+          <a href="/spots" class="btn">開始探索</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .hero {
+    position: relative;
+    height: 80vh;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://images.unsplash.com/photo-1524413840807-0c3cb6fa808d?w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(26,26,46,0.4) 0%, rgba(26,26,46,0.7) 100%);
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white;
+  }
+
+  .hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.1em;
+  }
+
+  .hero-content p {
+    font-size: 1.25rem;
+    opacity: 0.9;
+    margin-bottom: 2rem;
+  }
+
+  .hero-btns {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .section {
+    padding: 4rem 0;
+  }
+
+  .alt-bg {
+    background-color: #f0ede8;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    color: var(--text-dark);
+  }
+
+  .grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .section-footer {
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .about-section {
+    max-width: 800px;
+  }
+
+  .about-text {
+    font-size: 1.05rem;
+    line-height: 1.9;
+    color: #444;
+    text-align: justify;
+    margin-bottom: 2rem;
+  }
+
+  .cta-row {
+    text-align: center;
+  }
+
+  @media (max-width: 900px) {
+    .grid-3 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .hero-content h1 {
+      font-size: 2.5rem;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .grid-3 {
+      grid-template-columns: 1fr;
+    }
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+    .hero-btns {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+</style>

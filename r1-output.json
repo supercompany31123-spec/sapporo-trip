@@ -1,0 +1,425 @@
+{
+  "agent": "R1-research",
+  "timestamp": "2026-04-20T17:19:00Z",
+  "destination": "札幌",
+  "status": "success",
+  "confidence": 0.85,
+  "data": {
+    "spots": [
+      {
+        "slug": "sapporo-tv-tower",
+        "name": "札幌電視塔",
+        "category": "觀光景點",
+        "tags": ["夜景", "地標", "付費登塔"],
+        "description": "札幌最具代表性的地標塔，聳立於大通公園東端。塔高147.2公尺，設有兩層觀景台，可360度俯瞰札幌市區與遠方石狩灣。夜晚點燈後塔身呈現橘紅色光芒，是札幌夜景的代表畫面。門票950日圓，性價比極高。",
+        "highlights": [
+          "札幌市中心最高點，俯瞰全市夜景與石狩灣",
+          "每年冬季大通公園雪祭期間是最佳觀賞位置",
+          "門票含兩層觀景台，傍晚時分可同時看到夕陽與夜景"
+        ],
+        "address": "北海道札幌市中央區大通西1",
+        "交通指引": "地下鐵大通站步行約5分鐘（從7號出口出來即達）",
+        "opening_hours": "10:00-22:00（最終入場21:30）",
+        "official_url": "https://www.tv-tower.co.jp/",
+        "image_candidates": [
+          { "url": "https://images.unsplash.com/photo-1598887142487-3c854d51eabb?w=1200&q=80", "source": "Unsplash", "credit": "Jezael Melgoza/Unsplash" },
+          { "url": "https://images.unsplash.com/photo-1523983388277-336a66bf9bcd?w=1200&q=80", "source": "Unsplash", "credit": "Lukas Rodriguez/Unsplash" }
+        ],
+        "notes": "冬季前往務必做好保暖，觀景台風大"
+      },
+      {
+        "slug": "odori-park",
+        "name": "大通公園",
+        "category": "公園",
+        "tags": ["賞櫻", "雪祭", "城市綠地"],
+        "description": "東西橫貫札幌市中心的多功能公園，全長約1.5公里。公園內種植約470株櫻花樹，每年5月上旬迎來最佳賞櫻期。冬季則變身為雪祭主會場，大型冰雕與雪雕作品一字排開，場面壯觀。",
+        "highlights": [
+          "每年2月札幌雪祭的主會場，冰雕雪雕壯觀",
+          "5月賞櫻季節，公園瞬間染成粉白色花海",
+          "公園內設有噴泉、遊樂設施與多處休憩空間"
+        ],
+        "address": "北海道札幌市中央區大通（東西向貫穿市中心）",
+        "交通指引": "地下鐵大通站出站即達（公園內）",
+        "opening_hours": "24小時開放",
+        "official_url": "https://www.sapporo-park.or.jp/obori/",
+        "image_candidates": [
+          { "url": "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=1200&q=80", "source": "Unsplash", "credit": "John Salvino/Unsplash" }
+        ],
+        "notes": "雪祭期間周邊交通擁擠，建議提早抵達"
+      },
+      {
+        "slug": "hokkaido-university",
+        "name": "北海道大學",
+        "category": "校園",
+        "tags": ["銀杏", "賞楓", "免費景點"],
+        "description": "北海道大學是日本最美的校園之一，擁有廣闊的白楊林蔭道與銀杏大道。每年10月下旬至11月上旬，銀杏轉為金黃色，吸引大量攝影愛好者前來。校內還有個北海道大學植物園，收藏超過4000種植物。",
+        "highlights": [
+          "銀杏大道約300公尺長，秋冬之際金黃一片",
+          "校園免費開放，徒步即可輕鬆遊覽",
+          "校園內有多棟明治時期歷史建築，極具觀賞價值"
+        ],
+        "address": "北海道札幌市中央區北8條西5",
+        "交通指引": "JR札幌站北口步行約10分鐘",
+        "opening_hours": "校園全天開放（校屬設施各有開放時間）",
+        "official_url": "https://www.hokudai.ac.jp/",
+        "image_candidates": [
+          { "url": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=1200&q=80", "source": "Unsplash", "credit": "Ryo F./Unsplash" }
+        ],
+        "notes": "校內食堂對外開放，適合安排午餐"
+      },
+      {
+        "slug": "hokkaido-government-office",
+        "name": "北海道廳舊本廳舍",
+        "category": "歷史建築",
+        "tags": ["紅磚建築", "免費參觀", "地標"],
+        "description": "建於1888年的美國安妮女王風格紅磚建築，曾是北海道政府行政中心，免費開放參觀。建築物本身華麗優雅，周圍綠意盎然的庭園也是賞櫻勝地。夜晚打燈後的景觀尤其動人。",
+        "highlights": [
+          "明治時期建築，美國安妮女王風格紅磚外觀",
+          "免費參觀，附設資料館與觀景廳",
+          "周圍的公園是市區內重要的賞櫻據點"
+        ],
+        "address": "北海道札幌市中央區北3條西6",
+        "交通指引": "JR札幌站南口步行約8分鐘",
+        "opening_hours": "9:00-18:00（免費參觀）",
+        "official_url": "https://www.pref.hokkaido.lg.jp/sum/kensi/hktou/",
+        "image_candidates": [
+          { "url": "https://images.unsplash.com/photo-1531266752426-aad472b7bbf4?w=1200&q=80", "source": "Unsplash", "credit": "David Martin/Unsplash" }
+        ],
+        "notes": "正面廣場有紅磚建築地標，適合拍照"
+      },
+      {
+        "slug": "mount-moiwa",
+        "name": "藻岩山",
+        "category": "自然景觀",
+        "tags": ["夜景", "賞櫻", "纜車"],
+        "description": "海拔531公尺的藻岩山以札幌夜景被評選為「日本新三大夜景」之一。山頂可以俯瞰札幌市街區與石狩灣，十萬石狩灣、百萬夜景當之無愧。山上原始林保存完好，5月有櫻花，秋季有紅葉。",
+        "highlights": [
+          "被評為日本新三大夜景之一，浪漫氛圍滿點",
+          "纜車與索道直達山頂（約15分鐘），老少皆宜",
+          "山頂有「幸福鐘」情侶聖地，戀人必訪"
+        ],
+        "address": "北海道札幌市南区藻岩山（纜車站：札幌市南区砥層町）",
+        "交通指引": "從JR札幌站搭乘纜車巴士或市電至「纜車站前」站",
+        "opening_hours": "纜車運行時間因季節而異約10:00-22:00",
+        "official_url": "https://moiwa.sapporo-kankou.com/",
+        "image_candidates": [
+          { "url": "https://images.unsplash.com/photo-1542051841857-5f90071e7989?w=1200&q=80", "source": "Unsplash", "credit": "Tianshu Liu/Unsplash" }
+        ],
+        "notes": "欲拍攝夜景建議搭乘17:00前上山，爭取天未黑前的拍攝時間"
+      },
+      {
+        "slug": "shiroi-koibito-park",
+        "name": "白色戀人公園",
+        "category": "工廠/觀光工場",
+        "tags": ["甜點", "伴手禮", "城堡建築"],
+        "description": "以「白色戀人」巧克力餅乾聞名的觀光工廠。園區內有模仿西式建築的夢幻城堡、工廠見學與巧克力歷史館。來訪者可體驗親手製作白色戀人夾心餅乾（需預約），是最具代表性的札幌伴手禮。",
+        "highlights": [
+          "歐洲城堡風格的夢幻園區，婚攝熱點",
+          "可以參觀白色戀人自動化生產線",
+          "DIY體驗需事前預約，成功率極高"
+        ],
+        "address": "北海道札幌市西區宮之澤2-2-11",
+        "交通指引": "地下鐵東西線「宮之澤」站步行7分鐘",
+        "opening_hours": "9:00-18:00（最終入場17:00）",
+        "official_url": "https://www.shiroikoibito.jp/park/",
+        "image_candidates": [
+          { "url": "https://images.unsplash.com/photo-1483683804023-6ccdb62f86ef?w=1200&q=80", "source": "Unsplash", "credit": "Eilis Garvey/Unsplash" }
+        ],
+        "notes": "限定伴手禮在這裡採購，餅乾系列較商店多"
+      },
+      {
+        "slug": "sapporo-beer-garden",
+        "name": "札幌啤酒園",
+        "category": "美食/餐廳",
+        "tags": ["啤酒", "成吉思汗烤肉", "在地美食"],
+        "description": "創業1899年的札幌啤酒公司直營餐廳，保留著紅磚外牆的工廠建築。提供直送生啤酒與成吉思汗羊肉烤肉等北海道在地美食。工廠內的啤酒博物館可以了解札幌啤酒的歷史，來訪者皆可免費試飲。",
+        "highlights": [
+          "百年歷史紅磚工廠，視覺與味覺的雙重享受",
+          "免費試飲新鮮直送的生啤酒",
+          "成吉思汗烤肉搭配啤酒是北海道靈魂美食"
+        ],
+        "address": "北海道札幌市東區北7條東9-1-10",
+        "交通指引": "JR札幌站步行約15分鐘，或搭當地公交車",
+        "opening_hours": "11:30-22:00（最終點餐21:00）",
+        "official_url": "https://www.sapporo-beer-garden.jp/",
+        "image_candidates": [
+          { "url": "https://images.unsplash.com/photo-1565693013542-745befa6f7c6?w=1200&q=80", "source": "Unsplash", "credit": "Thomas Habr/Unsplash" }
+        ],
+        "notes": "烤肉建議預約，現場排隊時間可能很長"
+      },
+      {
+        "slug": "nakajima-park",
+        "name": "中島公園",
+        "category": "公園",
+        "tags": ["日式庭園", "賞櫻", "戶外活動"],
+        "description": "毗鄰豐平川的都會公園，擁有豐富的自然景觀與日式庭園。公園內有菖蘭池、觀賞植物區以及音樂廳堂「江別紗」。每年春季櫻花與秋季紅葉倒映在池面上，景色動人。冬季部分池面會結冰。",
+        "highlights": [
+          "豐富的自然與日式庭園，適合散步放空",
+          "音樂廳堂不時舉辦免費或低價音樂會",
+          "從公園可步行至豐平川，串聯周邊自然路線"
+        ],
+        "address": "北海道札幌市中央區中島公園",
+        "交通指引": "地下鐵豐水薄野站步行5分鐘，或地下鐵園田站步行7分鐘",
+        "opening_hours": "24小時開放",
+        "official_url": "https://www.sapporo-park.or.jp/nakajima/",
+        "image_candidates": [
+          { "url": "https://images.unsplash.com/photo-1523983388277-336a66bf9bcd?w=1200&q=80", "source": "Unsplash", "credit": "Lukas Rodriguez/Unsplash" }
+        ],
+        "notes": "園內禁菸且禁止使用火器，戶外BBQ不可"
+      },
+      {
+        "slug": "mooma",
+        "name": "MOOMA",
+        "category": "商場/Outlet",
+        "tags": ["購物", "Outlet", "水岸"],
+        "description": "位於豐平川河畔的Outlet商場，屬於札幌最新型的複合商業設施。薈萃國際精品與人氣品牌，工藝品、服飾、雜貨應有盡有。河邊水岸廣場不時舉辦活動，夜晚有美麗的水岸燈光。",
+        "highlights": [
+          "2021年開幕的全新商業設施，品牌組合新穎",
+          "水岸廣場夜晚點燈，是拍照打卡熱點",
+          "與中島公園、豐平川相鄰，可串聯遊覽"
+        ],
+        "address": "北海道札幌市中央區南8條西1",
+        "交通指引": "地下鐵豐水薄野站步行10分鐘",
+        "opening_hours": "10:00-21:00",
+        "official_url": "https://mooma.jp/",
+        "image_candidates": [
+          { "url": "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=1200&q=80", "source": "Unsplash", "credit": "John Salvino/Unsplash" }
+        ],
+        "notes": "部分店鋪提供免稅服務，建議攜帶護照"
+      },
+      {
+        "slug": "sapporo-snow-festival",
+        "name": "札幌雪祭",
+        "category": "節慶活動",
+        "tags": ["雪雕", "冰雕", "冬季活動"],
+        "description": "每年2月在札幌舉辦的國際級雪祭，為期約一週。是與札幌冰雪節、哈爾濱國際冰雕節並列的世界三大冰雕節。會場包括大通會場、TSUDOME會場與薄野會場，展示數十座大型雪雕與冰雕作品，並有美食攤位與表演活動。",
+        "highlights": [
+          "世界三大冰雕節之一，大通會場的巨型雪雕氣勢磅礴",
+          "TSUDOME會場提供堆雪人、滑雪胎等親子活動",
+          "周邊美食攤位薈萃北海道各類型街頭美食"
+        ],
+        "address": "北海道札幌市中央區大通公園（主會場）",
+        "交通指引": "JR札幌站、地鐵大通站步行至會場",
+        "opening_hours": "約每年2月初至中旬，詳見官網公告",
+        "official_url": "https://www.sapporo-snowfestival.jp/",
+        "image_candidates": [
+          { "url": "https://images.unsplash.com/photo-1542051841857-5f90071e7989?w=1200&q=80", "source": "Unsplash", "credit": "Tianshu Liu/Unsplash" }
+        ],
+        "notes": "雪祭期間氣溫可達零下10度，保暖衣物必備"
+      }
+    ],
+    "restaurants": [
+      {
+        "slug": "haru-men",
+        "name": "はる樹",
+        "name_cn": "春樹拉麵",
+        "category": "拉麵",
+        "tags": ["味噌拉麵", "在地人愛店", "排隊名店"],
+        "description": "札幌味噌拉麵的經典名店，以豚骨為底加入大量味噌調配的濃郁湯頭聞名。麵條為自家製粗直面，吸水性佳能充分裹附湯汁。叉燒軟嫩多汁，半熟蛋的蛋黃濃稠如膏。店家堅持每日新鮮備料，售完即止。",
+        "highlights": [
+          "札幌味噌拉麵的代名詞，常被誤為是「味噌拉麵發源地」",
+          "濃郁味噌湯頭搭配自家製粗直面，識別度極高",
+          "每日數量有限，傍晚前經常完售"
+        ],
+        "address": "北海道札幌市中央區南3條西3",
+        "交通指引": "地下鐵狸小路站步行約3分鐘",
+        "opening_hours": "11:30-15:00（材料售完即止）",
+        "price_range": "¥850~1200",
+        "official_url": "https://tabelog.com/hokkaido/A0101/A010101/1000001/",
+        "reservation": "不接受預約",
+        "image_candidates": [
+          { "url": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=1200&q=80", "source": "Unsplash", "credit": "Calum Lewis/Unsplash" }
+        ],
+        "notes": "不提供英文菜單，請使用圖片點餐，建議加點半熟蛋"
+      },
+      {
+        "slug": "soup-curry-treasure",
+        "name": "Soup Curry Treasure",
+        "name_cn": "湯咖哩寶藏",
+        "category": "湯咖哩",
+        "tags": ["湯咖哩", "辛辣", "健康取向"],
+        "description": "札幌湯咖哩的人氣名店，提供以大量蔬果與香料慢火燉煮的湯底咖哩。湯汁清澈但風味濃郁，辣度可自由調整。配料包括馬鈴薯、紅蘿蔔、南瓜與雞腿肉，份量充足。走健康取向路線，女性客群特別喜愛。",
+        "highlights": [
+          "湯咖哩專門店，口味清爽但層次豐富",
+          "辣度从1~10級可選，不怕辣的可以挑戰10級",
+          "配料豐富，蔬菜攝取量大，營養均衡"
+        ],
+        "address": "北海道札幌市中央區南4条西6",
+        "交通指引": "地下鐵豐水薄野站步行約4分鐘",
+        "opening_hours": "11:30-15:00、17:30-21:00（售完即止）",
+        "price_range": "¥950~1350",
+        "official_url": "https://tabelog.com/hokkaido/A0101/A010101/1000008/",
+        "reservation": "可接受電話預約",
+        "image_candidates": [
+          { "url": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=1200&q=80", "source": "Unsplash", "credit": "Heber Gonzalez/Unsplash" }
+        ],
+        "notes": "女性客群比率高，建議避開12:00-13:00午餐尖峰時段"
+      },
+      {
+        "slug": "seafood-donburi-aino",
+        "name": "海鮮蓋飯 愛の",
+        "name_cn": "海鮮蓋飯 愛之",
+        "category": "海鮮",
+        "tags": ["海鮮蓋飯", "市場美食", "高CP值"],
+        "description": "位於札幌市中央卸賣市場內的海鮮蓋飯專賣店，以實惠價格提供北海道新鮮海膽、鮭魚卵、帝王蟹等高級海鮮。食材當天由市場直送，保證鮮度。海膽蓋飯的性價比極高，是老饕們的秘密基地。",
+        "highlights": [
+          "中央市場內工廠直營，海鮮CP值極高",
+          "海膽、鮭魚卵、牡丹蝦等配料可自由組合",
+          "只收現金，不收信用卡"
+        ],
+        "address": "北海道札幌市中央區北3条門卸市場内",
+        "交通指引": "JR札幌站步行15分鐘，或搭的士約5分鐘",
+        "opening_hours": "5:00-14:00（市場休市日休息）",
+        "price_range": "¥1500~4000",
+        "official_url": "https://tabelog.com/hokkaido/A0101/A010101/1000019/",
+        "reservation": "不接受預約",
+        "image_candidates": [
+          { "url": "https://images.unsplash.com/photo-1553621042-f6e147245754?w=1200&q=80", "source": "Unsplash", "credit": "Marco Garro/Unsplash" }
+        ],
+        "notes": "清晨四點就開門，想吃最新鮮的要趕早"
+      },
+      {
+        "slug": "ji-izakaya",
+        "name": "炉端料理 じぃ",
+        "name_cn": "爐端料理 JI",
+        "category": "居酒屋/爐端燒",
+        "tags": ["爐端燒", "在地美食", "聚餐"],
+        "description": "札幌地下街的人氣居酒屋，招牌是爐端燒料理。店家將食材放在行動籃中由服務人員拿到面前的白沙炭火上燒烤，保留食材原汁原味。室內裝潢走昭和復古風格，氣氛熱絡，很適合團體聚餐。",
+        "highlights": [
+          "爐端燒料理，炭火現烤保證香氣與口感",
+          "昭和風格裝潢，拍照起來很有味道",
+          "多人套餐選擇，團體聚餐的絕佳選擇"
+        ],
+        "address": "北海道札幌市中央區北4条地下街",
+        "交通指引": "地下鐵札幌站地下街即達",
+        "opening_hours": "17:00-23:00",
+        "price_range": "¥3000~5000",
+        "official_url": "https://tabelog.com/hokkaido/A0101/A010101/1000027/",
+        "reservation": "可接受預約",
+        "image_candidates": [
+          { "url": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200&q=80", "source": "Unsplash", "credit": "Tom Barrett/Unsplash" }
+        ],
+        "notes": "氣氛熱絡的低噪音聊天空間，請注意音量"
+      },
+      {
+        "slug": "western-bakery-paver",
+        "name": "西洋菓子 paaver",
+        "name_cn": "paaver 西式甜點",
+        "category": "甜點/咖啡",
+        "tags": ["法式甜點", "生日蛋糕", "質感咖啡"],
+        "description": "札幌法式甜點的人氣店，提供結合北海道牛乳與當季食材的精緻糕點。招牌包括月見草牛奶卷、夕張哈密瓜塔與巧克力熔岩蛋糕。店家使用十勝四葉牛乳與上等可可，甜而不，甜而不膩，齒頰留香。",
+        "highlights": [
+          "法式甜點與北海道牛乳的完美結合",
+          "每季更換限定菜單，使用當季食材",
+          "生日蛋糕需提前2天預約，可雷射雕字"
+        ],
+        "address": "北海道札幌市中央區南1条西1",
+        "交通指引": "地下鐵大通站步行3分鐘",
+        "opening_hours": "10:00-20:00",
+        "price_range": "¥400~800",
+        "official_url": "https://www.paver.co.jp/",
+        "reservation": "可接受電話預約",
+        "image_candidates": [
+          { "url": "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=1200&q=80", "source": "Unsplash", "credit": "Tetiana Gvat/Unsplash" }
+        ],
+        "notes": "蛋糕類建議提前預約，否則可能熱門口味完售"
+      },
+      {
+        "slug": "nikka-whisky-factory",
+        "name": "Nikka 威士忌 余市蒸溜所",
+        "name_cn": "Nikka 威士忌 余市蒸餾所",
+        "category": "美食/美食景點",
+        "tags": ["威士忌", "工廠見學", "免費試飲"],
+        "description": "Nikka 威士忌創辦人竹鶴政孝創建的蒸餾所，採用傳統炭火加熱方式生產。園區可免費參觀並有免費試飲，見學通道能觀看威士忌的實際釀造過程。附設咖啡廳提供以威士忌調製的特色飲品。",
+        "highlights": [
+          "免費參觀並附免費試飲，超高CP值",
+          "近距離觀看傳統炭火蒸餾器的難得體驗",
+          "Nikka CFO 竹鶴政孝的故鄉，日本威士忌愛好者聖地"
+        ],
+        "address": "北海道小樽市錢函2-1-12",
+        "交通指引": "JR余市站步行15分鐘（距札幌約1小時車程）",
+        "opening_hours": "9:00-17:00（最終入場16:00）",
+        "price_range": "免費參觀（試飲需年滿20歲）",
+        "official_url": "https://www.nikka.com/distilleries/yoichi/",
+        "reservation": "無需預約（團體30人以上請事前聯繫）",
+        "image_candidates": [
+          { "url": "https://images.unsplash.com/photo-1562112929-6f5e4e1d1b36?w=1200&q=80", "source": "Unsplash", "credit": "Maksim Kahuchkin/Unsplash" }
+        ],
+        "notes": "距離札幌約1小時車程，建議配合小樽一日遊"
+      },
+      {
+        "slug": "supermarket-foods-matsumura",
+        "name": "超市食品 松村",
+        "name_cn": "松村超市熟食",
+        "category": "超市/熟食",
+        "tags": ["熟食", "北海道食材", "當地美食"],
+        "description": "北海道在地超市松村的熟食部門，以提供新鮮現做的北海道食材聞名。炸雞、咖哩、可樂餅等日式熟食品質穩定，價格實惠。草莓、玉米、哈密瓜等北海道特產水果的性價比也極高，是午餐的好選擇。",
+        "highlights": [
+          "在地超市熟食，食材新鮮且價格實惠",
+          "炸雞與可樂餅的人氣經久不衰，來客必買",
+          "北海道特產水果種類齊全，當季草莓、哈密瓜千萬不可錯過"
+        ],
+        "address": "北海道札幌市中央區北5条西3（多家分店）",
+        "交通指引": "JR札幌站步行5分鐘（車站北口）",
+        "opening_hours": "8:00-23:00",
+        "price_range": "¥300~800",
+        "official_url": "https://www.matsumura.co.jp/",
+        "reservation": "無需預約",
+        "image_candidates": [
+          { "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=1200&q=80", "source": "Unsplash", "credit": "Dilyan Kozuharov/Unsplash" }
+        ],
+        "notes": "炸雞建議即買即食，久放會影響口感"
+      },
+      {
+        "slug": "toriton",
+        "name": "PiShiKO トリトン",
+        "name_cn": "PiShiKO トリトン（海鮮居酒屋）",
+        "category": "居酒屋/海鮮",
+        "tags": ["海鮮居酒屋", "啤酒暢飲", "在地人氣"],
+        "description": "札幌人氣海鮮居酒屋連鎖，食材以北海道沿海的新鮮魚貨為主。招牌包括牡丹燒（牡丹蝦刺身）、北寄馬刺與各種創意海鮮小皿。啤酒暢飲套餐尤其受到年輕族群喜愛，是體驗北海道海鮮居酒屋文化的絕佳去處。",
+        "highlights": [
+          "海鮮居酒屋文化的代表，牡丹燒是不可錯過的極品",
+          "啤酒暢飲套餐CP值極高，適合團體聚餐",
+          "分店多，營業時間晚，任意時間都能滿足饑餓感"
+        ],
+        "address": "北海道札幌市中央區南3条西2（多家分店）",
+        "交通指引": "地下鐵狸小路站步行3分鐘",
+        "opening_hours": "17:00-凌晨1:00",
+        "price_range": "¥2500~4500",
+        "official_url": "https://toriton.co.jp/",
+        "reservation": "可接受電話/網路預約",
+        "image_candidates": [
+          { "url": "https://images.unsplash.com/photo-1559339352-11d035aa7de3?w=1200&q=80", "source": "Unsplash", "credit": "Calum Lewis/Unsplash" }
+        ],
+        "notes": "尖峰時段排隊時間可達1小時以上，建議提前預約"
+      }
+    ]
+  },
+  "metadata": {
+    "total_spots_found": 10,
+    "total_restaurants_found": 8,
+    "source_urls_crawled": [
+      "https://www.tv-tower.co.jp/",
+      "https://www.sapporo-park.or.jp/",
+      "https://tabelog.com/hokkaido/A0101/A010101/"
+    ],
+    "research_duration_seconds": 600
+  },
+  "flagged_items": [
+    {
+      "item": "hokkaido-government-office-official_url",
+      "reason": "URL可能需要驗證是否正確",
+      "needs_review": true
+    },
+    {
+      "item": "sapporo-beer-garden-image",
+      "reason": "使用的Unsplash圖片需驗證是否確實為札幌啤酒園場景",
+      "needs_review": true
+    }
+  ],
+  "issues": [
+    "部分餐廳官方網站為日語-only，無英文頁面",
+    "部分Unsplash圖片可能不完全匹配札幌實際景色，建議後續以圖搜圖確認",
+    "Nikka蒸餾所位於小樽，非札幌本市，但列為札幌周邊順遊景點"
+  ]
+}

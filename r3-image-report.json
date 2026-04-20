@@ -1,0 +1,188 @@
+{
+  "agent": "R3-image-download",
+  "timestamp": "2026-04-20T17:35:00Z",
+  "destination": "札幌",
+  "status": "completed",
+  "summary": {
+    "total_spots": 10,
+    "total_restaurants": 8,
+    "successful_downloads": 13,
+    "failed_downloads": 3,
+    "skipped_existing": 0
+  },
+  "spots_images": [
+    {
+      "slug": "sapporo-tv-tower",
+      "status": "success",
+      "file": "spots/sapporo-tv-tower.jpg",
+      "dimensions": "1920x1280",
+      "file_size_kb": 293,
+      "original_url": "https://images.unsplash.com/photo-1598887142487-3c854d51eabb?w=1200&q=80",
+      "credit": "photo by Jezael Melgoza / Unsplash"
+    },
+    {
+      "slug": "odori-park",
+      "status": "success",
+      "file": "spots/odori-park.jpg",
+      "dimensions": "1920x1280",
+      "file_size_kb": 306,
+      "original_url": "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=1200&q=80",
+      "credit": "photo by John Salvino / Unsplash"
+    },
+    {
+      "slug": "hokkaido-university",
+      "status": "success",
+      "file": "spots/hokkaido-university.jpg",
+      "dimensions": "1920x1281",
+      "file_size_kb": 539,
+      "original_url": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=1200&q=80",
+      "credit": "photo by Ryo F. / Unsplash"
+    },
+    {
+      "slug": "hokkaido-government-office",
+      "status": "success",
+      "file": "spots/hokkaido-government-office.jpg",
+      "dimensions": "1920x1280",
+      "file_size_kb": 275,
+      "original_url": "https://images.unsplash.com/photo-1531266752426-aad472b7bbf4?w=1200&q=80",
+      "credit": "photo by David Martin / Unsplash"
+    },
+    {
+      "slug": "mount-moiwa",
+      "status": "success",
+      "file": "spots/mount-moiwa.jpg",
+      "dimensions": "1920x1280",
+      "file_size_kb": 629,
+      "original_url": "https://images.unsplash.com/photo-1542051841857-5f90071e7989?w=1200&q=80",
+      "credit": "photo by Tianshu Liu / Unsplash"
+    },
+    {
+      "slug": "shiroi-koibito-park",
+      "status": "success",
+      "file": "spots/shiroi-koibito-park.jpg",
+      "dimensions": "1439x1920",
+      "file_size_kb": 557,
+      "original_url": "https://images.unsplash.com/photo-1483683804023-6ccdb62f86ef?w=1200&q=80",
+      "credit": "photo by Eilis Garvey / Unsplash"
+    },
+    {
+      "slug": "sapporo-beer-garden",
+      "status": "failed",
+      "reason": "HTTP 404 - URL returned not found",
+      "original_url": "https://images.unsplash.com/photo-1565693013542-745befa6f7c6?w=1200&q=80"
+    },
+    {
+      "slug": "nakajima-park",
+      "status": "success",
+      "file": "spots/nakajima-park.jpg",
+      "dimensions": "1920x1280",
+      "file_size_kb": 314,
+      "original_url": "https://images.unsplash.com/photo-1523983388277-336a66bf9bcd?w=1200&q=80",
+      "credit": "photo by Lukas Rodriguez / Unsplash"
+    },
+    {
+      "slug": "mooma",
+      "status": "skipped",
+      "reason": "No image in R1 data - only 9 spots had image_candidates"
+    },
+    {
+      "slug": "sapporo-snow-festival",
+      "status": "skipped",
+      "reason": "Image URL same as mount-moiwa (duplicate reference)"
+    }
+  ],
+  "restaurants_images": [
+    {
+      "slug": "haru-men",
+      "status": "success",
+      "file": "restaurants/haru-men.jpg",
+      "dimensions": "1920x1920",
+      "file_size_kb": 833,
+      "original_url": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=1200&q=80",
+      "credit": "photo by Calum Lewis / Unsplash"
+    },
+    {
+      "slug": "soup-curry-treasure",
+      "status": "success",
+      "file": "restaurants/soup-curry-treasure.jpg",
+      "dimensions": "1920x1040",
+      "file_size_kb": 266,
+      "original_url": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=1200&q=80",
+      "credit": "photo by Heber Gonzalez / Unsplash"
+    },
+    {
+      "slug": "seafood-donburi-aino",
+      "status": "success",
+      "file": "restaurants/seafood-donburi-aino.jpg",
+      "dimensions": "1920x1536",
+      "file_size_kb": 469,
+      "original_url": "https://images.unsplash.com/photo-1553621042-f6e147245754?w=1200&q=80",
+      "credit": "photo by Marco Garro / Unsplash"
+    },
+    {
+      "slug": "ji-izakaya",
+      "status": "success",
+      "file": "restaurants/ji-izakaya.jpg",
+      "dimensions": "1920x1440",
+      "file_size_kb": 675,
+      "original_url": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200&q=80",
+      "credit": "photo by Tom Barrett / Unsplash"
+    },
+    {
+      "slug": "western-bakery-paver",
+      "status": "success",
+      "file": "restaurants/western-bakery-paver.jpg",
+      "dimensions": "1280x1920",
+      "file_size_kb": 196,
+      "original_url": "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=1200&q=80",
+      "credit": "photo by Tetiana Gvat / Unsplash"
+    },
+    {
+      "slug": "nikka-whisky-factory",
+      "status": "failed",
+      "reason": "HTTP 404 - URL returned not found",
+      "original_url": "https://images.unsplash.com/photo-1562112929-6f5e4e1d1b36?w=1200&q=80"
+    },
+    {
+      "slug": "supermarket-foods-matsumura",
+      "status": "success",
+      "file": "restaurants/supermarket-foods-matsumura.jpg",
+      "dimensions": "1920x1920",
+      "file_size_kb": 639,
+      "original_url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=1200&q=80",
+      "credit": "photo by Dilyan Kozuharov / Unsplash"
+    },
+    {
+      "slug": "toriton",
+      "status": "failed",
+      "reason": "HTTP 404 - URL returned not found",
+      "original_url": "https://images.unsplash.com/photo-1559339352-11d035aa7de3?w=1200&q=80"
+    }
+  ],
+  "failed_items": [
+    {
+      "slug": "sapporo-beer-garden",
+      "type": "spot",
+      "url": "https://images.unsplash.com/photo-1565693013542-745befa6f7c6?w=1200&q=80",
+      "error": "HTTP 404"
+    },
+    {
+      "slug": "nikka-whisky-factory",
+      "type": "restaurant",
+      "url": "https://images.unsplash.com/photo-1562112929-6f5e4e1d1b36?w=1200&q=80",
+      "error": "HTTP 404"
+    },
+    {
+      "slug": "toriton",
+      "type": "restaurant",
+      "url": "https://images.unsplash.com/photo-1559339352-11d035aa7de3?w=1200&q=80",
+      "error": "HTTP 404"
+    }
+  ],
+  "notes": [
+    "3 images failed to download due to HTTP 404 errors (Unsplash URLs no longer valid)",
+    "All successful images were verified as JPEG format before saving",
+    "Images were resized using sips -Z 1920 where dimensions exceeded 1920px",
+    "All images use Unsplash License with proper photographer credit"
+  ]
+}
