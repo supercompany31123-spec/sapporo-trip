@@ -1,0 +1,655 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout title="購物指南" description="札幌購物指南，百貨商場、藥妝、土產伴手禮完整攻略。">
+  <Header />
+
+  <main>
+    <div class="page-hero">
+      <div class="hero-content">
+        <h1>購物指南</h1>
+        <p>從百貨到藥妝，從土產到伴手禮</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Department Stores -->
+      <section class="guide-section">
+        <h2 class="section-title">🏬 百貨商場</h2>
+        <div class="shops-grid">
+          <div class="shop-card featured">
+            <div class="shop-badge">最大規模</div>
+            <h3>大丸札幌店</h3>
+            <p class="shop-desc">札幌站直通的日系百貨，B1美食街、地下超市、各樓層品牌齊備。地下2樓的食品區是土產採購勝地。</p>
+            <div class="shop-info">
+              <span>📍 JR札幌站直通</span>
+              <span>🕐 10:00-20:00</span>
+            </div>
+            <div class="shop-highlights">
+              <span>B1 超市與食品伴手禮</span>
+              <span>1F 化妝品與國際精品</span>
+              <span>7F 迪士尼商店</span>
+            </div>
+          </div>
+
+          <div class="shop-card">
+            <h3>PASEO</h3>
+            <p class="shop-desc">與JR札幌站相連的商業設施，適合快速採購。室內通道連接車站與大丸，途經眾多流行服飾與餐廳。</p>
+            <div class="shop-info">
+              <span>📍 JR札幌站內/西側</span>
+              <span>🕐 10:00-21:00</span>
+            </div>
+          </div>
+
+          <div class="shop-card">
+            <h3>ESTA（ロウエント）</h3>
+            <p class="shop-desc">以科技電器知名的商場，10-11樓是拉麵共和國。B1的超市與美食街也很受歡迎。</p>
+            <div class="shop-info">
+              <span>📍 JR札幌站西側</span>
+              <span>🕐 10:00-21:00</span>
+            </div>
+            <div class="shop-highlights">
+              <span>10F 拉麵共和國</span>
+              <span>B1 超市與便當</span>
+            </div>
+          </div>
+
+          <div class="shop-card">
+            <h3>狸小路商店街</h3>
+            <p class="shop-desc">札幌歷史最悠久的拱廊商店街，全長約1公里，店鋪超過200家。下雨天也能盡情逛街。</p>
+            <div class="shop-info">
+              <span>📍 薄野站至西8丁目</span>
+              <span>🕐 依店鋪而異</span>
+            </div>
+            <div class="shop-highlights">
+              <span>藥妝、超市、百元商店</span>
+              <span>餐廳、遊戲中心、藥局</span>
+            </div>
+          </div>
+
+          <div class="shop-card">
+            <h3>Stellar Place</h3>
+            <p class="shop-desc">與ESTA相鄰的時尚百貨，風格偏都會女性。地下餐廳與甜點店人氣很高。</p>
+            <div class="shop-info">
+              <span>📍 JR札幌站西側</span>
+              <span>🕐 10:00-20:00</span>
+            </div>
+          </div>
+
+          <div class="shop-card">
+            <h3>大通公園周邊</h3>
+            <p class="shop-desc">APPLE STORE、不知道自己、薄野PIAGO等商場匯聚，流行時尚與生活風格店為主。</p>
+            <div class="shop-info">
+              <span>📍 大通站附近</span>
+              <span>🕐 10:00-21:00</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Drugstores -->
+      <section class="guide-section alt-bg">
+        <h2 class="section-title">💊 藥妝店</h2>
+        <p class="section-intro">北海道藥妝店的價格通常比東京稍高，但特定商品（如北海道限定零食）仍然值得購買。</p>
+        
+        <div class="drugstores-grid">
+          <div class="drugstore-card">
+            <h3>鶴羽藥妝（ツ-protocol）</h3>
+            <p>日本最大藥妝連鎖之一，店面密集。價格最具競爭力，刷PASMO卡另有折扣。</p>
+          </div>
+          <div class="drugstore-card">
+            <h3>松本清</h3>
+            <p>外國觀光客最熟悉的藥妝店，中文服務人員多。優惠券可在機場或飯店拿到。</p>
+          </div>
+          <div class="drugstore-card">
+            <h3>SUNDRUG</h3>
+            <p>價格實惠，部分店鋪營業至深夜。狸小路內有多家分店。</p>
+          </div>
+          <div class="drugstore-card">
+            <h3>科爾士（Kirkopin）</h3>
+            <p>主打開架式化妝品與保養品，時常有折扣活動。退稅服務完善。</p>
+          </div>
+        </div>
+
+        <div class="drugstore-tip">
+          <h4>🛒 藥妝省錢技巧</h4>
+          <ul>
+            <li>下載各藥妝官方APP，時常有優惠券</li>
+            <li>機場藥妝價格較高，建議市區購買</li>
+            <li>超過¥5,000即可退稅，留意護照與收據</li>
+            <li>「第2類醫藥品」與「化妝品」退稅率不同，可比較</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Souvenirs -->
+      <section class="guide-section">
+        <h2 class="section-title">🎁 伴手禮推薦</h2>
+        <div class="souvenir-grid">
+          <div class="souvenir-category">
+            <h3>🍫 巧克力 / 餅乾</h3>
+            <div class="souvenir-items">
+              <div class="souvenir-item">
+                <strong>白色戀人</strong>
+                <span>北海道定番，牛奶巧克力包裝餅乾</span>
+              </div>
+              <div class="souvenir-item">
+                <strong>薯條三兄弟</strong>
+                <span> CALBEE，罰到你叫它但真的涮嘴</span>
+              </div>
+              <div class="souvenir-item">
+                <strong> Royce</strong>
+                <span>年生巧克力的名店，抹茶與白巧克力超人氣</span>
+              </div>
+              <div class="souvenir-item">
+                <strong>北果樓</strong>
+                <span>提起北海道就想到的白色巧克力夾心餅</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="souvenir-category">
+            <h3>🍪 餅乾 / 零食</h3>
+            <div class="souvenir-items">
+              <div class="souvenir-item">
+                <strong>北見批發</strong>
+                <span>薄荷巧克力涮嘴口感，多種口味可選</span>
+              </div>
+              <div class="souvenir-item">
+                <strong>六花亭</strong>
+                <span>草莓巧克力、奶油餅乾，選用北海道食材</span>
+              </div>
+              <div class="souvenir-item">
+                <strong>好吃的起司</strong>
+                <span>ONIMARU濃郁起司夾心餅，狸小路有工坊</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="souvenir-category">
+            <h3>🍯 特產</h3>
+            <div class="souvenir-items">
+              <div class="souvenir-item">
+                <strong>夕張哈密瓜果凍</strong>
+                <span>夕張哈密瓜香甜，做工精緻</span>
+              </div>
+              <div class="souvenir-item">
+                <strong>北海道昆布</strong>
+                <span>昆布茶、昆布糖果，養生又特別</span>
+              </div>
+              <div class="souvenir-item">
+                <strong>玉米茶</strong>
+                <span>焙煎玉米茶，冷泡熱泡皆宜</span>
+              </div>
+              <div class="souvenir-item">
+                <strong>馬斯卡泊（奶相關）</strong>
+                <span>奶油餅乾、起司零食，道產乳製品香</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="souvenir-category">
+            <h3>🍶 酒類</h3>
+            <div class="souvenir-items">
+              <div class="souvenir-item">
+                <strong>北海道清酒</strong>
+                <span>男山、寶川等，冰雪融水釀造，口感清冽</span>
+              </div>
+              <div class="souvenir-item">
+                <strong>水果酒</strong>
+                <span>藍莓酒、覆盆子酒，女生最愛</span>
+              </div>
+              <div class="souvenir-item">
+                <strong>白色烈酒</strong>
+                <span> nikka，威士忌工房直營，價格實惠</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Where to Buy -->
+      <section class="guide-section alt-bg">
+        <h2 class="section-title">📍 哪裡買？</h2>
+        <div class="location-cards">
+          <div class="location-card">
+            <h3>🛒 超市 / 百貨地下</h3>
+            <p>大丸B1、松倉超市（札幌站內）是採購零食伴手禮最方便的地方。價格合理，選擇齊全。</p>
+          </div>
+          <div class="location-card">
+            <h3>✈️ 新千歲機場</h3>
+            <p>免稅店與伴手禮店薈萃，回國前最後加購點。價格稍高但節省行李空間。國際線安檢後種類更豐富。</p>
+          </div>
+          <div class="location-card">
+            <h3>🏬 狸小路藥妝</h3>
+            <p>零食、藥妝、伴手禮一網打盡。多家店舖競爭激烈，常有折扣。</p>
+          </div>
+          <div class="location-card">
+            <h3>🏠 AEON MALL</h3>
+            <p>郊區大型購物中心，適合自駕旅客。北海道限定商品多，試吃也大方。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tax Free Info -->
+      <section class="guide-section">
+        <h2 class="section-title">🛃 免稅須知</h2>
+        <div class="tax-info">
+          <div class="tax-item">
+            <h3>免稅門檻</h3>
+            <p>一般商品（化妝品、鐘錶、電器等）滿¥5,000可退稅。消耗品（零食、藥妝、食品）滿¥5,000可退稅，但需密封並在30天內帶出日本。</p>
+          </div>
+          <div class="tax-item">
+            <h3>退稅流程</h3>
+            <p>購物時出示護照，店家會辦理退稅。部分大型商場提供市內退稅（先付稅後退），機場退稅需在海關檢查前辦理。</p>
+          </div>
+          <div class="tax-item">
+            <h3>注意事項</h3>
+            <p>消耗品退稅後不能拆封或使用，需放入手提行李。免税商品的包裝應保留至出境。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Apps & Tips -->
+      <section class="guide-section alt-bg">
+        <h2 class="section-title">💡 購物技巧</h2>
+        <div class="tips-grid">
+          <div class="tip-card">
+            <h3>📱 比價APP</h3>
+            <ul>
+              <li><strong>价格.com</strong> - 查日本各地售價</li>
+              <li><strong>PayPay</strong> - 支付同時有優惠券</li>
+              <li><strong>樂天APP</strong> - 累積樂天超級點數</li>
+            </ul>
+          </div>
+          <div class="tip-card">
+            <h3>💳 支付方式</h3>
+            <ul>
+              <li>信用卡：Visa/Mastercard普及，JCB在本地店鋪接受度更高</li>
+              <li>電子支付：PayPay、LINE Pay可用，但部分小店僅收現金</li>
+              <li>現金：傳統市場、一些小店仍以現金為主</li>
+            </ul>
+          </div>
+          <div class="tip-card">
+            <h3>🧳 行李建議</h3>
+            <ul>
+              <li>採購零食伴手禮建議到機場前先秤行李，避免超重</li>
+              <li>易碎商品（如Royce生巧）需保冷袋與冰寶</li>
+              <li>壓抑敗家的衝動，預留行李空間</li>
+            </ul>
+          </div>
+          <div class="tip-card">
+            <h3>🕐 營業時間</h3>
+            <ul>
+              <li>百貨：10:00-20:00（週末可能提早）</li>
+              <li>藥妝：通常 9:00-22:00，部分24小時</li>
+              <li>超市：通常 8:00-23:00</li>
+              <li>元旦新年多數店鋪休息</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .page-hero {
+    background: linear-gradient(135deg, var(--secondary) 0%, #2d2d4a 100%);
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .hero-content p {
+    opacity: 0.85;
+    font-size: 1.15rem;
+  }
+
+  main {
+    padding-bottom: 4rem;
+  }
+
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  .guide-section {
+    padding: 4rem 0;
+  }
+
+  .alt-bg {
+    background-color: #f0ede8;
+    margin: 0 -1.5rem;
+    padding: 4rem 1.5rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+    color: var(--text-dark);
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .section-intro {
+    text-align: center;
+    color: #555;
+    margin-bottom: 2rem;
+  }
+
+  /* Shops Grid */
+  .shops-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+  }
+
+  .shop-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    position: relative;
+  }
+
+  .shop-card.featured {
+    grid-column: span 2;
+    background: linear-gradient(135deg, #fff 0%, #fff8f0 100%);
+    border: 2px solid var(--accent);
+  }
+
+  .shop-badge {
+    position: absolute;
+    top: -10px;
+    left: 1rem;
+    background: var(--accent);
+    color: var(--secondary);
+    font-size: 0.7rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    font-weight: 600;
+  }
+
+  .shop-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+  }
+
+  .shop-desc {
+    font-size: 0.85rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 0.75rem;
+  }
+
+  .shop-info {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+    flex-wrap: wrap;
+  }
+
+  .shop-info span {
+    font-size: 0.8rem;
+    color: #666;
+  }
+
+  .shop-highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+
+  .shop-highlights span {
+    background: #f5f5f5;
+    color: #555;
+    padding: 0.15rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+  }
+
+  /* Drugstores Grid */
+  .drugstores-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .drugstore-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.25rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+
+  .drugstore-card h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+  }
+
+  .drugstore-card p {
+    font-size: 0.85rem;
+    color: #555;
+    line-height: 1.5;
+  }
+
+  .drugstore-tip {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+
+  .drugstore-tip h4 {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-dark);
+  }
+
+  .drugstore-tip ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .drugstore-tip li {
+    font-size: 0.85rem;
+    color: #555;
+    padding-left: 1.25rem;
+    position: relative;
+    margin-bottom: 0.4rem;
+  }
+
+  .drugstore-tip li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+  }
+
+  /* Souvenir Grid */
+  .souvenir-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .souvenir-category {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+
+  .souvenir-category h3 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+    border-bottom: 2px solid var(--primary);
+    padding-bottom: 0.5rem;
+  }
+
+  .souvenir-items {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .souvenir-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  .souvenir-item strong {
+    color: var(--text-dark);
+    font-size: 0.95rem;
+  }
+
+  .souvenir-item span {
+    color: #666;
+    font-size: 0.8rem;
+  }
+
+  /* Location Cards */
+  .location-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+  }
+
+  .location-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.25rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+
+  .location-card h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+  }
+
+  .location-card p {
+    font-size: 0.85rem;
+    color: #555;
+    line-height: 1.5;
+  }
+
+  /* Tax Info */
+  .tax-info {
+    display: grid;
+    gap: 1.25rem;
+  }
+
+  .tax-item {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+
+  .tax-item h3 {
+    font-size: 1.05rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-dark);
+  }
+
+  .tax-item p {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.6;
+  }
+
+  /* Tips Grid */
+  .tips-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+  }
+
+  .tip-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.25rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+
+  .tip-card h3 {
+    font-size: 0.95rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-dark);
+  }
+
+  .tip-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .tip-card li {
+    font-size: 0.8rem;
+    color: #555;
+    padding-left: 1rem;
+    position: relative;
+    margin-bottom: 0.4rem;
+    line-height: 1.4;
+  }
+
+  .tip-card li::before {
+    content: '·';
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+  }
+
+  @media (max-width: 900px) {
+    .shops-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .shop-card.featured {
+      grid-column: span 2;
+    }
+
+    .drugstores-grid,
+    .location-cards,
+    .tips-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .souvenir-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .shops-grid,
+    .drugstores-grid,
+    .location-cards,
+    .tips-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .alt-bg {
+      margin: 0;
+      border-radius: 0;
+    }
+  }
+</style>
