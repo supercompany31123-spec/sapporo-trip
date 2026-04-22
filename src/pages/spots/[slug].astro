@@ -78,6 +78,27 @@ const BASE = '/sapporo-trip';
           </div>
         </aside>
       </div>
+
+      <!-- Google Maps -->
+      <div class="map-section">
+        <h2 class="map-title">📍 地圖位置</h2>
+        <div class="map-embed">
+          <iframe
+            width="100%"
+            height="350"
+            style="border:0; border-radius: 12px;"
+            loading="lazy"
+            allowfullscreen
+            src={`https://www.google.com/maps?q=${encodeURIComponent(spot.data.address)}&output=embed&hl=zh-TW`}
+            title={`${spot.data.name} 地圖`}
+          ></iframe>
+        </div>
+        <div class="map-link">
+          <a href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(spot.data.address)}`} target="_blank" rel="noopener" class="btn-map">
+            在 Google Maps 中開啟 →
+          </a>
+        </div>
+      </div>
     </div>
   </main>
 
@@ -248,6 +269,39 @@ const BASE = '/sapporo-trip';
   .credit {
     font-size: 0.75rem;
     color: #888;
+  }
+
+  .map-section {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid #eee;
+  }
+
+  .map-title {
+    font-size: 1.4rem;
+    color: var(--text-dark);
+    margin-bottom: 1.25rem;
+  }
+
+  .map-embed {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+
+  .map-link {
+    margin-top: 1rem;
+    text-align: right;
+  }
+
+  .btn-map {
+    color: var(--primary);
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
+  .btn-map:hover {
+    text-decoration: underline;
   }
 
   @media (max-width: 900px) {
