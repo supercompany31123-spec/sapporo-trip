@@ -1,0 +1,486 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout title="季節活動" description="北海道札幌四季活動總整理，冬季雪祭、夏季花季、秋季賞楓、春季櫻花，每個時節都有不同的精彩。">
+  <Header />
+
+  <main>
+    <div class="page-hero">
+      <div class="hero-content">
+        <h1>季節活動</h1>
+        <p>北海道四季皆有精彩，每個時節都值得造訪</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Spring -->
+      <section class="season-section spring">
+        <div class="season-header">
+          <div class="season-emoji">🌸</div>
+          <div class="season-title">
+            <h2>春季</h2>
+            <span class="season-months">3月 - 5月</span>
+          </div>
+        </div>
+        <div class="events-grid">
+          <div class="event-card">
+            <div class="event-month">3月中～4月</div>
+            <h3>札幌樱花季</h3>
+            <p class="event-desc">北海道大學校園、大通公園、中島公園都是知名賞櫻景點。札幌的櫻花比東京晚約兩週，4月底是最佳觀賞期。</p>
+            <div class="event-highlights">
+              <span>🌸 札幌氣象台周邊</span>
+              <span>🌸 北海道大學銀杏並木</span>
+              <span>🌸 中島公園</span>
+            </div>
+          </div>
+          <div class="event-card">
+            <div class="event-month">4月下旬</div>
+            <h3>千代浦公園樱花節</h3>
+            <p class="event-desc">當地人推薦的賞櫻秘境，遠離觀光客人潮，悠閒享受花見時光。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Summer -->
+      <section class="season-section summer">
+        <div class="season-header">
+          <div class="season-emoji">🌻</div>
+          <div class="season-title">
+            <h2>夏季</h2>
+            <span class="season-months">6月 - 8月</span>
+          </div>
+        </div>
+        <div class="events-grid">
+          <div class="event-card featured">
+            <div class="event-month">7月</div>
+            <h3>北海道薰衣草花季</h3>
+            <p class="event-desc">富良野與美瑛的薰衣草田正值花季，紫色花海如夢似幻。從札幌出發當日來回可行，建議搭乘薰衣草號觀光巴士。</p>
+            <div class="event-highlights">
+              <span>💜 富田農場（Kinotake）</span>
+              <span>💜 拼布之路</span>
+              <span>💜 紫色隧道</span>
+            </div>
+          </div>
+          <div class="event-card">
+            <div class="event-month">6月底～7月</div>
+            <h3>YOSAKOI索朗祭</h3>
+            <p class="event-desc">北海道最大規模的舞蹈祭典，穿著特色服裝的舞者在街上遊行，音樂與掌聲不斷，氣氛熱闘。</p>
+            <div class="event-highlights">
+              <span>💃 大通公園主舞台</span>
+              <span>💃 免費觀賞</span>
+            </div>
+          </div>
+          <div class="event-card">
+            <div class="event-month">7-8月</div>
+            <h3>札幌夏祭</h3>
+            <p class="event-desc">市中心舉辦的夏季活動，有屋台小吃、傳統表演與花火大会。適合全家同樂。</p>
+          </div>
+          <div class="event-card">
+            <div class="event-month">8月</div>
+            <h3>札幌花火大會</h3>
+            <p class="event-desc">豐平川花火大會是北海道最大規模的煙火活動之一，數千發煙火照亮夜空。</p>
+            <div class="event-highlights">
+              <span>🎆 豐平川岸</span>
+              <span>🎆 免費觀賞</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Autumn -->
+      <section class="season-section autumn">
+        <div class="season-header">
+          <div class="season-emoji">🍁</div>
+          <div class="season-title">
+            <h2>秋季</h2>
+            <span class="season-months">9月 - 11月</span>
+          </div>
+        </div>
+        <div class="events-grid">
+          <div class="event-card">
+            <div class="event-month">9月下旬～10月中旬</div>
+            <h3>賞楓季節</h3>
+            <p class="event-desc">北海道的楓葉比本州早紅一個月。山區與市區同步換裝，赤紅、金黃、橙色交織成大片地毯。</p>
+            <div class="event-highlights">
+              <span>🍁 藻岩山纜車賞楓</span>
+              <span>🍁 定山溪溫泉</span>
+              <span>🍁 大雪山國立公園</span>
+            </div>
+          </div>
+          <div class="event-card">
+            <div class="event-month">10月</div>
+            <h3>札幌秋季三富祭</h3>
+            <p class="event-desc">北海道最具傳統色彩的秋季祭典，在定山溪舉行，有神轎遊行與當地美食。</p>
+          </div>
+          <div class="event-card">
+            <div class="event-month">9-10月</div>
+            <h3>食材的季節</h3>
+            <p class="event-desc">秋季是北海道食材最豐富的時期。秋刀魚、松茸、蘋果、南瓜、葡萄相繼上市，是美食愛好者的最佳旅遊時機。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Winter -->
+      <section class="season-section winter">
+        <div class="season-header">
+          <div class="season-emoji">❄️</div>
+          <div class="season-title">
+            <h2>冬季</h2>
+            <span class="season-months">12月 - 2月</span>
+          </div>
+        </div>
+        <div class="events-grid">
+          <div class="event-card featured">
+            <div class="event-month">2月</div>
+            <h3>札幌雪祭</h3>
+            <p class="event-desc">世界知名的冬季盛典，始於1950年，毎年吸引超過200萬旅客。大通會場展出巨型雪雕，冰雕作品晶瑩剔透，夜晚點燈後如夢似幻。</p>
+            <div class="event-highlights">
+              <span>🏔️ 大通會場：巨型雪雕</span>
+              <span>🏔️ 薄野會場：冰雕展示</span>
+              <span>🏔️ TSUDOMU會場：冰雪滑梯</span>
+            </div>
+            <div class="event-note">
+              <strong>📅 2026年日程：</strong>2月初至中旬（確切日期每年公告）
+            </div>
+          </div>
+          <div class="event-card">
+            <div class="event-month">12月底～</div>
+            <h3>聖誕市集</h3>
+            <p class="event-desc">大通公園周邊搭建聖誕木屋，贩卖德式聖誕小吃與手工藝品，營造濃厚的聖誕氛圍。</p>
+          </div>
+          <div class="event-card">
+            <div class="event-month">12月～2月</div>
+            <h3>札幌白色燈飾</h3>
+            <p class="event-desc">市區主要街道與公園有白色燈飾布置，札幌站周邊與大通公園的燈飾最具人氣。</p>
+          </div>
+          <div class="event-card">
+            <div class="event-month">11月下旬～</div>
+            <h3>滑雪季開始</h3>
+            <p class="event-desc">札幌周邊有多座滑雪場，著名的有手稻滑雪場（可遠眺市區夜景）與札幌藻岩山滑雪場。約11月底開始營業。</p>
+          </div>
+          <div class="event-card">
+            <div class="event-month">2月</div>
+            <h3>定山溪雪物語</h3>
+            <p class="event-desc">定山溪溫泉區的冬季活動，有雪燈走廊、雪地活動，泡湯之餘還能賞雪景。</p>
+          </div>
+          <div class="event-card">
+            <div class="event-month">1月</div>
+            <h3>札幌冰雪公主遊行</h3>
+            <p class="event-desc">雪祭期間的熱闘活動，穿著婚禮服的「冰雪公主」在市中心遊行。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Monthly Calendar -->
+      <section class="guide-section alt-bg">
+        <h2 class="section-title">📅 月份活動一覽</h2>
+        <div class="calendar-table">
+          <div class="calendar-row header">
+            <span>月份</span>
+            <span>活動</span>
+            <span>推薦程度</span>
+          </div>
+          <div class="calendar-row"><span>1月</span><span>滑雪季、札幌雪祭準備</span><span>⭐⭐⭐⭐</span></div>
+          <div class="calendar-row"><span>2月</span><span>札幌雪祭（最大盛典）</span><span>⭐⭐⭐⭐⭐</span></div>
+          <div class="calendar-row"><span>3月</span><span>初春、賞雪最後時機</span><span>⭐⭐⭐</span></div>
+          <div class="calendar-row"><span>4月</span><span>賞櫻（晚於本州）</span><span>⭐⭐⭐⭐</span></div>
+          <div class="calendar-row"><span>5月</span><span>新綠、觀光淡季</span><span>⭐⭐⭐</span></div>
+          <div class="calendar-row"><span>6月</span><span>薰衣草季節前、YOSAKOI</span><span>⭐⭐⭐⭐</span></div>
+          <div class="calendar-row"><span>7月</span><span>薰衣草旺季、花季</span><span>⭐⭐⭐⭐⭐</span></div>
+          <div class="calendar-row"><span>8月</span><span>花火大会、夏祭</span><span>⭐⭐⭐⭐</span></div>
+          <div class="calendar-row"><span>9月</span><span>初秋、美食季節</span><span>⭐⭐⭐⭐</span></div>
+          <div class="calendar-row"><span>10月</span><span>賞楓（早於本州）</span><span>⭐⭐⭐⭐⭐</span></div>
+          <div class="calendar-row"><span>11月</span><span>賞楓尾聲、滑雪準備</span><span>⭐⭐⭐</span></div>
+          <div class="calendar-row"><span>12月</span><span>聖誕市集、白色燈飾</span><span>⭐⭐⭐⭐</span></div>
+        </div>
+      </section>
+
+      <!-- Tips -->
+      <section class="guide-section">
+        <h2 class="section-title">💡 旅遊建議</h2>
+        <div class="tips-cards">
+          <div class="tip-card">
+            <h3>❄️ 冬季</h3>
+            <p>雪祭期間住宿價格高且容易客滿，建議提前2-3個月預訂。穿著防滑鞋，注意電車與公車可能延誤。</p>
+          </div>
+          <div class="tip-card">
+            <h3>🌻 夏季</h3>
+            <p>富良野花季是北海道最旺季，務必提早預訂交通與住宿。早起出發可以避開人潮與塞車。</p>
+          </div>
+          <div class="tip-card">
+            <h3>🍁 秋冬季</h3>
+            <p>賞楓時節短暫，建議關注紅葉情報網站。滑雪則要注意各雪場的開放時間。</p>
+          </div>
+          <div class="tip-card">
+            <h3>🌸 春季</h3>
+            <p>賞櫻人潮比東京少，悠閒度取勝。4月底可同時賞櫻與補雪（山區）。</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .page-hero {
+    background: linear-gradient(135deg, var(--secondary) 0%, #2d2d4a 100%);
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .hero-content p {
+    opacity: 0.85;
+    font-size: 1.15rem;
+  }
+
+  main {
+    padding-bottom: 4rem;
+  }
+
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  /* Season Sections */
+  .season-section {
+    padding: 3.5rem 0;
+    border-bottom: 1px solid #eee;
+  }
+
+  .season-header {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .season-emoji {
+    font-size: 3rem;
+  }
+
+  .season-title h2 {
+    font-size: 2rem;
+    color: var(--text-dark);
+    margin-bottom: 0.25rem;
+  }
+
+  .season-months {
+    color: #888;
+    font-size: 0.95rem;
+  }
+
+  .season-section.spring .season-header { border-bottom: 3px solid #FFB7C5; }
+  .season-section.summer .season-header { border-bottom: 3px solid #F5A623; }
+  .season-section.autumn .season-header { border-bottom: 3px solid #D2691E; }
+  .season-section.winter .season-header { border-bottom: 3px solid #87CEEB; }
+
+  .spring .season-header { border-color: #FFB7C5; }
+  .summer .season-header { border-color: #F5A623; }
+  .autumn .season-header { border-color: #D2691E; }
+  .winter .season-header { border-color: #87CEEB; }
+
+  .events-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+
+  .event-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+
+  .event-card.featured {
+    grid-column: span 2;
+    background: linear-gradient(135deg, #fff 0%, #fff5f5 100%);
+    border: 2px solid var(--primary);
+  }
+
+  .event-month {
+    display: inline-block;
+    background: var(--primary);
+    color: white;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+  }
+
+  .event-card h3 {
+    font-size: 1.15rem;
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+  }
+
+  .event-desc {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 0.75rem;
+  }
+
+  .event-highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+
+  .event-highlights span {
+    background: #f5f5f5;
+    color: #555;
+    padding: 0.15rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+  }
+
+  .event-note {
+    margin-top: 1rem;
+    background: #fff3e0;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    color: #555;
+  }
+
+  .event-note strong {
+    color: var(--text-dark);
+  }
+
+  /* Calendar */
+  .guide-section {
+    padding: 4rem 0;
+  }
+
+  .alt-bg {
+    background-color: #f0ede8;
+    margin: 0 -1.5rem;
+    padding: 4rem 1.5rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+    color: var(--text-dark);
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .calendar-table {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+
+  .calendar-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid #eee;
+  }
+
+  .calendar-row:last-child {
+    border-bottom: none;
+  }
+
+  .calendar-row.header {
+    background: var(--secondary);
+    color: white;
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+
+  .calendar-row:nth-child(even):not(.header) {
+    background-color: #fafafa;
+  }
+
+  .calendar-row span:first-child {
+    font-weight: 600;
+    color: var(--text-dark);
+    width: 80px;
+  }
+
+  .calendar-row span:nth-child(2) {
+    flex: 1;
+    color: #555;
+    font-size: 0.9rem;
+  }
+
+  .calendar-row span:last-child {
+    font-size: 1rem;
+  }
+
+  /* Tips */
+  .tips-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+  }
+
+  .tip-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.25rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+
+  .tip-card h3 {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-dark);
+  }
+
+  .tip-card p {
+    font-size: 0.85rem;
+    color: #555;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 900px) {
+    .events-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .event-card.featured {
+      grid-column: span 1;
+    }
+
+    .tips-cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 600px) {
+    .tips-cards {
+      grid-template-columns: 1fr;
+    }
+
+    .calendar-row {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.25rem;
+    }
+
+    .alt-bg {
+      margin: 0;
+      border-radius: 0;
+    }
+  }
+</style>
