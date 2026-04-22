@@ -1,0 +1,563 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout title="住宿推薦" description="札幌住宿推薦指南，含車站周邊、薄野商圈、狸小路等熱門區域飯店分析。">
+  <Header />
+
+  <main>
+    <div class="page-hero">
+      <div class="hero-content">
+        <h1>住宿推薦</h1>
+        <p>精選區域與飯店類型，找到最適合你的落腳處</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Area Overview -->
+      <section class="guide-section">
+        <h2 class="section-title">📍 熱門住宿區域</h2>
+        <div class="areas-grid">
+          <div class="area-card featured">
+            <div class="area-badge">遊客首選</div>
+            <h3>札幌站 / 北口周邊</h3>
+            <p class="area-desc">距離JR札幌站步行5分鐘內，機能完善，百貨、藥妝、餐廳雲集。適合需要交通便利的旅客。</p>
+            <div class="area-highlights">
+              <span>✅ JR札幌站直達</span>
+              <span>✅ 大丸、近鐵美嘉同棟</span>
+              <span>✅ 往返機場最方便</span>
+            </div>
+            <div class="hotel-examples">
+              <div class="hotel-item">
+                <strong>JR INN札幌</strong>
+                <span>車站南口1分鐘，景觀房可看雪祭</span>
+              </div>
+              <div class="hotel-item">
+                <strong>札幌格拉斯麗飯店</strong>
+                <span>車站步行3分鐘，狸小路入口</span>
+              </div>
+              <div class="hotel-item">
+                <strong>Q額孔特飯店</strong>
+                <span>較新穎，車站北口徒步5分鐘</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="area-card">
+            <h3>薄野 / 豐水薄野</h3>
+            <p class="area-desc">札幌夜生活重心，餐廳、酒吧、卡拉OK林立。房價相對實惠，美食天堂。</p>
+            <div class="area-highlights">
+              <span>✅ 美食餐廳林立</span>
+              <span>✅ 地鐵站直達飯店</span>
+              <span>✅ 價格適中</span>
+            </div>
+            <div class="hotel-examples">
+              <div class="hotel-item">
+                <strong>世紀山海酒店</strong>
+                <span>地鐵豐水薄野站3分鐘</span>
+              </div>
+              <div class="hotel-item">
+                <strong>薄野大都cire</strong>
+                <span>，就在薄野路口</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="area-card">
+            <h3>狸小路</h3>
+            <p class="area-desc">百年拱廊商店街，雨天也能逛街。連接薄野與札幌站，位置適中。</p>
+            <div class="area-highlights">
+              <span>✅ 室內拱廊不怕雨</span>
+              <span>✅ 藥妝、超市機能佳</span>
+              <span>✅ 步行至大通約10分鐘</span>
+            </div>
+            <div class="hotel-examples">
+              <div class="hotel-item">
+                <strong>WBF GREAT HOTEL</strong>
+                <span>狸小路2號出口徒步1分鐘</span>
+              </div>
+              <div class="hotel-item">
+                <strong>MYSTAYS札幌公園</strong>
+                <span>狸小路內，平價舒適</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="area-card">
+            <h3>大通公園周邊</h3>
+            <p class="area-desc">札幌市中心，電視塔、大通公園就在眼前。適合想深度遊市的旅客。</p>
+            <div class="area-highlights">
+              <span>✅ 電視塔、大通公園步行可達</span>
+              <span>✅ 地鐵交會站</span>
+              <span>✅ 觀光首選位置</span>
+            </div>
+            <div class="hotel-examples">
+              <div class="hotel-item">
+                <strong>STRINGS HOTEL</strong>
+                <span>大通公園徒步3分鐘</span>
+              </div>
+              <div class="hotel-item">
+                <strong>札幌 Orient Express</strong>
+                <span>精品酒店，評價極高</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Hotel Types -->
+      <section class="guide-section alt-bg">
+        <h2 class="section-title">🏨 飯店類型建議</h2>
+        <div class="types-grid">
+          <div class="type-card">
+            <div class="type-icon">💼</div>
+            <h3>商務飯店</h3>
+            <p>以日本連鎖商務飯店為主（東横INN、Super Hotel、DormyInn等）。房間精緻，附早餐，價格合理。</p>
+            <ul class="type-features">
+              <li>單人/雙床房¥4,000-7,000</li>
+              <li>附免費早餐（小規模）</li>
+              <li>車站周邊密集</li>
+            </ul>
+          </div>
+
+          <div class="type-card">
+            <div class="type-icon">🛋️</div>
+            <h3>觀光飯店</h3>
+            <p>較大型的觀光型飯店，景觀佳、設施多元。部分有溫泉（大浴場），適合自駕旅客。</p>
+            <ul class="type-features">
+              <li>雙人房¥8,000-15,000</li>
+              <li>景觀/溫泉加分</li>
+              <li>周邊停車方便</li>
+            </ul>
+          </div>
+
+          <div class="type-card">
+            <div class="type-icon">🏠</div>
+            <h3>公寓式 / 民宿</h3>
+            <p>Guest House、Matsumoto、月租房型。適合長期停留或自駕旅客，有完整廚房。</p>
+            <ul class="type-features">
+              <li>¥3,000-6,000/晚起</li>
+              <li>可做飯、洗衣</li>
+              <li>適合自駕或長期遊</li>
+            </ul>
+          </div>
+
+          <div class="type-card">
+            <div class="type-icon">✨</div>
+            <h3>設計精品</h3>
+            <p>風格獨特、裝潢用心的質感旅宿。適合情侶、家庭特殊場合入住。</p>
+            <ul class="type-features">
+              <li>雙人房¥12,000起</li>
+              <li>設計感強</li>
+              <li>特殊場合推薦</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Budget Tips -->
+      <section class="guide-section">
+        <h2 class="section-title">💰 省錢建議</h2>
+        <div class="tips-list">
+          <div class="tip-item">
+            <div class="tip-number">1</div>
+            <div class="tip-content">
+              <h3>提早預訂</h3>
+              <p>雪祭（2月）、薰衣草季（7-8月）、跨年等旺季建議提前2-3個月預訂，價格差異可達2倍。</p>
+            </div>
+          </div>
+
+          <div class="tip-item">
+            <div class="tip-number">2</div>
+            <div class="tip-content">
+              <h3>週中便宜</h3>
+              <p>週日、一、二入住通常比週五、六便宜20-30%。可用住宿預訂網站的日曆功能比價。</p>
+            </div>
+          </div>
+
+          <div class="tip-item">
+            <div class="tip-number">3</div>
+            <div class="tip-content">
+              <h3>取消險</h3>
+              <p>預訂可免費取消的房型，價格通常稍高但更有彈性。天數較長時建議勾選。</p>
+            </div>
+          </div>
+
+          <div class="tip-item">
+            <div class="tip-number">4</div>
+            <div class="tip-content">
+              <h3>連泊折扣</h3>
+              <p>住3晚以上常有空房折扣或延退優惠，可直接聯系飯店或在現場議價。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Booking Platforms -->
+      <section class="guide-section alt-bg">
+        <h2 class="section-title">🔗 推薦預訂平台</h2>
+        <div class="platforms-grid">
+          <div class="platform-card">
+            <h3>Agoda</h3>
+            <p>東南亞旅客常用，價格常有優勢，累積回饋金可折抵。</p>
+          </div>
+          <div class="platform-card">
+            <h3>Booking.com</h3>
+            <p>歐美旅客愛用，詳盡住客評價，免費取消選項多。</p>
+          </div>
+          <div class="platform-card">
+            <h3>Hotels.com</h3>
+            <p>每滿10晚送1晚，相當於九折，長住的話很划算。</p>
+          </div>
+          <div class="platform-card">
+            <h3>Jalan / 樂天</h3>
+            <p>日本本土平台，日文版常有独家優惠，適用溫泉旅館。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Practical Info -->
+      <section class="guide-section">
+        <h2 class="section-title">🏨 實用資訊</h2>
+        <div class="info-grid">
+          <div class="info-card">
+            <h3>⏰ 進 / 退房時間</h3>
+            <p>進房通常 15:00 後，退房 10:00 前。商務飯店多為 10:00 退房，少數可到 11:00。</p>
+          </div>
+          <div class="info-card">
+            <h3>🧳 行李寄放</h3>
+            <p>不想趕進退房時間，可寄放行李在飯店當日或下午取回。多數飯店提供這項服務。</p>
+          </div>
+          <div class="info-card">
+            <h3>♨️ 溫泉/大浴場</h3>
+            <p>部分飯店附設大浴場（非溫泉），可緩解旅途疲勞。記得遵守泡湯禮儀（先淋浴再入池）。</p>
+          </div>
+          <div class="info-card">
+            <h3>🍞 早餐</h3>
+            <p>商務飯店常附免費早餐（麵包、白飯、味噌汁），觀光飯店早餐Buffet多在¥1,500-2,500。</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .page-hero {
+    background: linear-gradient(135deg, var(--secondary) 0%, #2d2d4a 100%);
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .hero-content p {
+    opacity: 0.85;
+    font-size: 1.15rem;
+  }
+
+  main {
+    padding-bottom: 4rem;
+  }
+
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  .guide-section {
+    padding: 4rem 0;
+  }
+
+  .alt-bg {
+    background-color: #f0ede8;
+    margin: 0 -1.5rem;
+    padding: 4rem 1.5rem;
+  }
+
+  .guide-section:nth-child(even):not(.alt-bg) {
+    border-top: 1px solid #eee;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+    color: var(--text-dark);
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  /* Areas Grid */
+  .areas-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .area-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.75rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    position: relative;
+  }
+
+  .area-card.featured {
+    grid-column: span 2;
+    background: linear-gradient(135deg, #fff 0%, #fff5f5 100%);
+    border: 2px solid var(--primary);
+  }
+
+  .area-badge {
+    position: absolute;
+    top: -12px;
+    left: 1.5rem;
+    background: var(--primary);
+    color: white;
+    font-size: 0.75rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    font-weight: 600;
+  }
+
+  .area-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-dark);
+  }
+
+  .area-desc {
+    color: #555;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+
+  .area-highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .area-highlights span {
+    background: #f5f5f5;
+    color: #555;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+  }
+
+  .hotel-examples {
+    border-top: 1px solid #eee;
+    padding-top: 1rem;
+  }
+
+  .hotel-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .hotel-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .hotel-item strong {
+    color: var(--text-dark);
+    font-size: 0.95rem;
+  }
+
+  .hotel-item span {
+    color: #666;
+    font-size: 0.85rem;
+  }
+
+  /* Types Grid */
+  .types-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+  }
+
+  .type-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+
+  .type-icon {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .type-card h3 {
+    font-size: 1.05rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-dark);
+  }
+
+  .type-card p {
+    font-size: 0.85rem;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+
+  .type-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .type-features li {
+    font-size: 0.8rem;
+    color: #666;
+    padding-left: 1rem;
+    position: relative;
+    margin-bottom: 0.35rem;
+  }
+
+  .type-features li::before {
+    content: '·';
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+  }
+
+  /* Tips List */
+  .tips-list {
+    display: grid;
+    gap: 1.25rem;
+  }
+
+  .tip-item {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+  }
+
+  .tip-number {
+    width: 40px;
+    height: 40px;
+    background: var(--primary);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  .tip-content h3 {
+    font-size: 1.05rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+  }
+
+  .tip-content p {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.6;
+  }
+
+  /* Platforms Grid */
+  .platforms-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+  }
+
+  .platform-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+
+  .platform-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-dark);
+  }
+
+  .platform-card p {
+    font-size: 0.85rem;
+    color: #666;
+    line-height: 1.5;
+  }
+
+  /* Info Grid */
+  .info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+
+  .info-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+
+  .info-card h3 {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-dark);
+  }
+
+  .info-card p {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 900px) {
+    .areas-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .area-card.featured {
+      grid-column: span 1;
+    }
+
+    .types-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .platforms-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 600px) {
+    .types-grid,
+    .platforms-grid,
+    .info-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .alt-bg {
+      margin: 0;
+      border-radius: 0;
+    }
+  }
+</style>
