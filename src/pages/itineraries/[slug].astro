@@ -1,0 +1,288 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+export async function getStaticPaths() {
+  const itineraries = await getCollection('itineraries');
+  return itineraries.map(itinerary => ({
+    params: { slug: itinerary.data.slug },
+    props: { itinerary },
+  }));
+}
+
+const { itinerary } = Astro.props;
+const { Content } = await render(itinerary);
+const BASE = '/sapporo-trip';
+
+const spots = await getCollection('spots');
+const spotMap = Object.fromEntries(spots.map(s => [s.data.slug, s]));
+
+const seasonEmoji: Record<string, string> = {
+  '冬季': '❄️',
+  '夏季': '🌻',
+  '秋季': '🍁',
+  '春季': '🌸',
+};
+---
+
+<BaseLayout title={itinerary.data.name} description={itinerary.data.description}>
+  <Header />
+
+  <main>
+    <div class="itinerary-hero">
+      <div class="hero-content">
+        <span class="season-badge">{seasonEmoji[itinerary.data.season] || ''} {itinerary.data.season}</span>
+        <h1>{itinerary.data.name}</h1>
+        <p class="hero-desc">{itinerary.data.description}</p>
+        <div class="hero-meta">
+          <span class="meta-item">⏱ {itinerary.data.duration}</span>
+          <span class="meta-item">📍 {itinerary.data.route.length} 個景點</span>
+        </div>
+        <div class="hero-tags">
+          {itinerary.data.tags.map(tag => (
+            <span class="tag">{tag}</span>
+          ))}
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="timeline">
+        {itinerary.data.route.map((step, index) => {
+          const linkedSpot = spotMap[step.spot];
+          return (
+            <div class="timeline-item">
+              <div class="time-marker">
+                <span class="time">{step.time}</span>
+                <div class="marker-dot"></div>
+              </div>
+              <div class="timeline-content">
+                <div class="step-header">
+                  <h3 class="step-title">{step.activity}</h3>
+                  <span class="step-duration">{step.duration}</span>
+                </div>
+                <p class="step-desc">{step.description}</p>
+                {linkedSpot && (
+                  <a href={`${BASE}/spots/${linkedSpot.data.slug}`} class="spot-link">
+                    📎 查看景點详情 →
+                  </a>
+                )}
+              </div>
+            </div>
+          );
+        })}
+      </div>
+
+      <div class="markdown-section">
+        <Content />
+      </div>
+    </div>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .itinerary-hero {
+    background: linear-gradient(135deg, var(--secondary) 0%, #2d2d4a 100%);
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  .season-badge {
+    display: inline-block;
+    background-color: var(--primary);
+    color: white;
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+
+  .itinerary-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-desc {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-meta {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1.25rem;
+    font-size: 1rem;
+  }
+
+  .hero-tags {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .tag {
+    background-color: rgba(255,255,255,0.15);
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+  }
+
+  main {
+    padding-bottom: 4rem;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  .timeline {
+    position: relative;
+    padding: 3rem 0;
+  }
+
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 80px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--primary), #eee);
+  }
+
+  .timeline-item {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+    position: relative;
+  }
+
+  .time-marker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 80px;
+    position: relative;
+  }
+
+  .time {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+    white-space: nowrap;
+  }
+
+  .marker-dot {
+    width: 14px;
+    height: 14px;
+    background-color: var(--primary);
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 0 0 2px var(--primary);
+    position: relative;
+    z-index: 1;
+  }
+
+  .timeline-content {
+    flex: 1;
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+
+  .step-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.75rem;
+  }
+
+  .step-title {
+    font-size: 1.2rem;
+    color: var(--text-dark);
+  }
+
+  .step-duration {
+    background-color: var(--bg-cream);
+    color: #666;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+  }
+
+  .step-desc {
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 0.75rem;
+  }
+
+  .spot-link {
+    color: var(--primary);
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
+  .spot-link:hover {
+    text-decoration: underline;
+  }
+
+  .markdown-section {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    margin-top: 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+
+  .markdown-section :global(h2) {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+  }
+
+  .markdown-section :global(p) {
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+  }
+
+  @media (max-width: 600px) {
+    .timeline::before {
+      left: 20px;
+    }
+
+    .time-marker {
+      min-width: 40px;
+    }
+
+    .time {
+      font-size: 0.8rem;
+    }
+
+    .step-header {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+</style>

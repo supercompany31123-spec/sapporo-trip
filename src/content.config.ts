@@ -40,4 +40,24 @@ const restaurants = defineCollection({
   }),
 });
 
-export const collections = { spots, restaurants };
+const itineraries = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/itineraries' }),
+  schema: z.object({
+    name: z.string(),
+    slug: z.string(),
+    description: z.string(),
+    duration: z.string(),
+    season: z.string(),
+    tags: z.array(z.string()),
+    route: z.array(z.object({
+      spot: z.string(),
+      time: z.string(),
+      duration: z.string(),
+      activity: z.string(),
+      description: z.string(),
+    })),
+    featured: z.boolean().default(false),
+  }),
+});
+
+export const collections = { spots, restaurants, itineraries };

@@ -1,0 +1,42 @@
+---
+name: "冬季雪祭經典一日遊"
+slug: "winter-festival-day"
+description: "札幌雪祭經典路線，帶你走訪市中心各大景點，從早晨的大通公園雪雕到傍晚的薄野霓虹，再到藻岩山欣賞百萬夜景。"
+duration: "一日"
+season: "冬季"
+tags: ["雪祭", "夜景", "美食", "經典"]
+route:
+  - spot: "sapporo-tv-tower"
+    time: "09:00"
+    duration: "1小時"
+    activity: "札幌電視塔"
+    description: "早晨先到札幌電視塔，登上塔頂俯瞰大通公園雪祭會場，避開人潮賞雪雕。"
+  - spot: "odori-park"
+    time: "10:30"
+    duration: "2小時"
+    activity: "大通公園雪祭"
+    description: "漫步大通公園，欣賞壯觀雪雕作品，感受北海道冬季的熱闘氣氛。"
+  - spot: "hokkaido-government-office"
+    time: "13:00"
+    duration: "1小時"
+    activity: "北海道廳舊本廳舍"
+    description: "參觀北海道廳舊本廳舍，感受百年歷史建築風情，並在廳舍前廣場拍照留念。"
+  - spot: "ji-izakaya"
+    time: "12:30"
+    duration: "1.5小時"
+    activity: "午餐：JR Tower居酒屋"
+    description: "午餐在札幌車站附近的居酒屋享用道地北海道美食，包含成吉思汗羊肉燒烤。"
+  - spot: "shiroi-koibito-park"
+    time: "15:00"
+    duration: "2小時"
+    activity: "白色戀人公園"
+    description: "下午前往白色戀人公園，參觀巧克力工廠，並體驗白色戀人製作教室。"
+  - spot: "mount-moiwa"
+    time: "18:00"
+    duration: "2小時"
+    activity: "藻岩山夜景"
+    description: "傍晚搭乘纜車上山，在藻岩山欣賞被評選為日本新三大夜景的札幌百萬夜景。"
+featured: true
+---
+
+這條路線涵蓋雪祭的重點區域，從早到晚緊密安排。建議穿著保暖衣物與防滑雪靴。

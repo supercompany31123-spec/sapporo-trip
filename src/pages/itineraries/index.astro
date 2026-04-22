@@ -1,0 +1,162 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const itineraries = await getCollection('itineraries');
+const sortedItineraries = itineraries.sort((a, b) => {
+  if (a.data.featured !== b.data.featured) return b.data.featured ? 1 : -1;
+  return 0;
+});
+
+const seasonEmoji: Record<string, string> = {
+  '冬季': '❄️',
+  '夏季': '🌻',
+  '秋季': '🍁',
+  '春季': '🌸',
+};
+---
+
+<BaseLayout title="行程推薦">
+  <header class="page-header">
+    <div class="container">
+      <h1>行程推薦</h1>
+      <p class="page-subtitle">精選路線，帶你玩遍札幌</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="itinerary-grid">
+      {sortedItineraries.map((itinerary) => (
+        <a href={`/sapporo-trip/itineraries/${itinerary.id}`} class="itinerary-card">
+          <div class="card-header">
+            <span class="season-badge">{seasonEmoji[itinerary.data.season] || ''} {itinerary.data.season}</span>
+            <span class="duration-tag">{itinerary.data.duration}</span>
+          </div>
+          <h2 class="card-title">{itinerary.data.name}</h2>
+          <p class="card-desc">{itinerary.data.description}</p>
+          <div class="card-tags">
+            {itinerary.data.tags.map(tag => (
+              <span class="tag">{tag}</span>
+            ))}
+          </div>
+          <div class="card-footer">
+            <span class="route-count">📍 {itinerary.data.route.length} 個景點</span>
+            <span class="read-more">查看行程 →</span>
+          </div>
+        </a>
+      ))}
+    </div>
+  </main>
+</BaseLayout>
+
+<style>
+  .page-header {
+    background-color: var(--secondary);
+    color: white;
+    padding: 3rem 0;
+    text-align: center;
+  }
+
+  .page-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .page-subtitle {
+    opacity: 0.8;
+    font-size: 1.1rem;
+  }
+
+  main {
+    padding: 3rem 0;
+  }
+
+  .itinerary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 2rem;
+  }
+
+  .itinerary-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.75rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: block;
+  }
+
+  .itinerary-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  }
+
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .season-badge {
+    background-color: var(--primary);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+
+  .duration-tag {
+    background-color: var(--bg-cream);
+    color: var(--text-dark);
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+  }
+
+  .card-title {
+    font-size: 1.4rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-dark);
+  }
+
+  .card-desc {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+  }
+
+  .card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .tag {
+    background-color: #f0ede8;
+    color: #555;
+    padding: 0.2rem 0.6rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+  }
+
+  .card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+    font-size: 0.9rem;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  @media (max-width: 600px) {
+    .itinerary-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
