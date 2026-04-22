@@ -1,6 +1,8 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
 
 const itineraries = await getCollection('itineraries');
 const sortedItineraries = itineraries.sort((a, b) => {
@@ -17,6 +19,7 @@ const seasonEmoji: Record<string, string> = {
 ---
 
 <BaseLayout title="行程推薦">
+  <Header />
   <header class="page-header">
     <div class="container">
       <h1>行程推薦</h1>
@@ -47,6 +50,8 @@ const seasonEmoji: Record<string, string> = {
       ))}
     </div>
   </main>
+
+  <Footer />
 </BaseLayout>
 
 <style>
