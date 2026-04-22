@@ -4,6 +4,13 @@
 <footer class="site-footer">
   <div class="container">
     <div class="footer-content">
+      <nav class="footer-nav">
+        <a href="/sapporo-trip">首頁</a>
+        <a href="/sapporo-trip/spots">景點</a>
+        <a href="/sapporo-trip/restaurants">美食</a>
+        <a href="/sapporo-trip/itineraries">行程</a>
+        <a href="/sapporo-trip/transport">交通</a>
+      </nav>
       <p class="copyright">&copy; 2026 札幌旅遊導覽</p>
       <div class="credits">
         <h4>圖片版權</h4>
@@ -58,5 +65,23 @@
     font-size: 0.75rem;
     line-height: 1.8;
     color: rgba(255,255,255,0.4);
+  }
+
+  .footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 1.25rem;
+    flex-wrap: wrap;
+  }
+
+  .footer-nav a {
+    color: rgba(255,255,255,0.6);
+    font-size: 0.9rem;
+    transition: color 0.2s;
+  }
+
+  .footer-nav a:hover {
+    color: var(--accent);
   }
 </style>

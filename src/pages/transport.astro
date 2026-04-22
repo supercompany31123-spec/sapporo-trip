@@ -1,0 +1,602 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout title="交通指南" description="前往札幌與市內交通方式完整攻略，包含新千歲機場交通、地鐵路線與市區移動建議。">
+  <Header />
+
+  <main>
+    <div class="page-hero">
+      <div class="hero-content">
+        <h1>交通指南</h1>
+        <p>輕鬆抵達札幌，玩轉市區</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Airport Section -->
+      <section class="guide-section">
+        <h2 class="section-title">🛫 機場交通</h2>
+        <div class="transport-cards">
+          <div class="transport-card">
+            <div class="card-icon">🚃</div>
+            <div class="card-content">
+              <h3>JR Airport Liner（快速Airport號）</h3>
+              <div class="card-meta">
+                <span class="duration">約36分鐘</span>
+                <span class="price">¥1,310</span>
+              </div>
+              <p>從新千歲機場直達札幌站，班次頻繁（每15-30分鐘一班），是最推薦的交通方式。乘車月台就在機場B1F。</p>
+              <div class="route-info">
+                <span class="route-label">路線</span>
+                <span>新千歲機場 → 札幌站</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="transport-card">
+            <div class="card-icon">🚌</div>
+            <div class="card-content">
+              <h3>高速公路巴士</h3>
+              <div class="card-meta">
+                <span class="duration">約70-90分鐘</span>
+                <span class="price">¥1,500</span>
+              </div>
+              <p>票價較實惠，但易受路況影響，尖峰時段可能塞車。建議預留較多時間。</p>
+              <div class="route-info">
+                <span class="route-label">優點</span>
+                <span>票價便宜、可直達市區多處</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="transport-card">
+            <div class="card-icon">🚕</div>
+            <div class="card-content">
+              <h3>計程車 / 包車</h3>
+              <div class="card-meta">
+                <span class="duration">約60分鐘</span>
+                <span class="price">¥15,000起</span>
+              </div>
+              <p>適合多人同行或攜帶大量行李時使用。可預約中文司機的包車服務。</p>
+              <div class="route-info">
+                <span class="route-label">適合</span>
+                <span>家族旅遊、行李過多、深夜航班</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Subway Section -->
+      <section class="guide-section alt-bg">
+        <h2 class="section-title">🚇 市區地鐵</h2>
+        <p class="section-intro">札幌地下鐵共有3條線，路線簡單明瞭，幾乎可抵達所有主要景點。</p>
+        
+        <div class="subway-lines">
+          <div class="line-card line-north-south">
+            <div class="line-header">
+              <span class="line-name">南北線</span>
+              <span class="line-color" style="background:#00B16B"></span>
+            </div>
+            <div class="line-stations">
+              <span>札幌</span>
+              <span>→</span>
+              <span>大通</span>
+              <span>→</span>
+              <span>薄野</span>
+              <span>→</span>
+              <span>豐水薄野</span>
+            </div>
+            <p class="line-desc">南北向主幹線，經過札幌站、大通公園、薄野商圈。沿線景點包括大通公園、薄野、豐水薄野。</p>
+          </div>
+
+          <div class="line-card line-east-west">
+            <div class="line-header">
+              <span class="line-name">東西線</span>
+              <span class="line-color" style="background:#F5A623"></span>
+            </div>
+            <div class="line-stations">
+              <span>宮之澤</span>
+              <span>→</span>
+              <span>大通</span>
+              <span>→</span>
+              <span> Bus Center前</span>
+              <span>→</span>
+              <span>新さっぽろ</span>
+            </div>
+            <p class="line-desc">東西向主幹線，終點站新さっぽろ可轉乘JR。白色戀人公園在宮之澤站步行7分鐘。</p>
+          </div>
+
+          <div class="line-card line-tozai">
+            <div class="line-header">
+              <span class="line-name">東豐線</span>
+              <span class="line-color" style="background:#0074BA"></span>
+            </div>
+            <div class="line-stations">
+              <span>栄町</span>
+              <span>→</span>
+              <span>北区麻生</span>
+              <span>→</span>
+              <span>札幌</span>
+              <span>→</span>
+              <span>福住</span>
+            </div>
+            <p class="line-desc">連接北區與厚別區，在札幌站與南北線交會。終點福住站可達羊丘觀景台。</p>
+          </div>
+        </div>
+
+        <div class="fare-table">
+          <h4>📊 票價參考（普通單程）</h4>
+          <div class="fare-items">
+            <div class="fare-item"><span>1-2站</span><strong>¥200</strong></div>
+            <div class="fare-item"><span>3-4站</span><strong>¥260</strong></div>
+            <div class="fare-item"><span>5站以上</span><strong>¥310</strong></div>
+          </div>
+          <p class="fare-note">✅ 建議購買 <a href="https://www.sapporo-doreca.jp/welcometc/" target="_blank" rel="noopener">Welcome TCPU卡</a>，可享單程¥200（原¥210），加值¥500以上多¥30bonus</p>
+        </div>
+      </section>
+
+      <!-- City Transit Section -->
+      <section class="guide-section">
+        <h2 class="section-title">🚌 市區交通</h2>
+        
+        <div class="transit-options">
+          <div class="option-item">
+            <div class="option-icon">🚃</div>
+            <div class="option-content">
+              <h3>市電（路面電車）</h3>
+              <p>一條環繞市區的路面電車線，連接火車站與狸小路一帶。車資¥170起，適合短距離移動。</p>
+            </div>
+          </div>
+
+          <div class="option-item">
+            <div class="option-icon">🚌</div>
+            <div class="option-content">
+              <h3>路線巴士</h3>
+              <p>覆盖地鐵無法到達的區域，如藻岩山纜車站。乘車時抽號碼牌，下車時依距離付款。</p>
+            </div>
+          </div>
+
+          <div class="option-item">
+            <div class="option-icon">🚶</div>
+            <div class="option-content">
+              <h3>步行 / 自行車</h3>
+              <p>札幌市区街道方正，大通公園到狸小路步行約10分鐘。市區也有共享單車 Pointbike。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Practical Info -->
+      <section class="guide-section alt-bg">
+        <h2 class="section-title">💡 實用資訊</h2>
+        
+        <div class="tips-grid">
+          <div class="tip-card">
+            <h3>🎫 IC卡建議</h3>
+            <p>北海道的IC卡是 <strong>Kitaca</strong>（JR方向）或 <strong>Suica</strong>（JR以外），兩者可通用。建議在機場或車站購買並加值，省去每次買票的麻煩。</p>
+          </div>
+
+          <div class="tip-card">
+            <h3>🕐 運行時間</h3>
+            <p>地鐵約 06:00-00:00（依路線略有不同）。深夜抵達的旅客請注意末班車時間，或預訂機場接送服務。</p>
+          </div>
+
+          <div class="tip-card">
+            <h3>📱 推薦APP</h3>
+            <ul>
+              <li><strong>乘換NAVITIME</strong> - 輸入起訖站即可查詢最佳路線與票價</li>
+              <li><strong>Google Maps</strong> - 國外也準確，標示地鐵與巴士</li>
+              <li><strong>JR北海道官網</strong> - 查詢火車時刻與優惠票</li>
+            </ul>
+          </div>
+
+          <div class="tip-card">
+            <h3>🎒 行李寄放</h3>
+            <p>札幌車站內有投幣式 locker（小¥300-500／大¥600-800），飯店也提供行李寄放服務。推薦使用 <strong>ecbo cloak</strong> APP搜尋附近空位。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Quick Reference -->
+      <section class="guide-section">
+        <h2 class="section-title">📋 景點交通速查</h2>
+        <div class="quick-ref-table">
+          <div class="ref-row">
+            <span class="ref-destination">札幌電視塔</span>
+            <span class="ref-station">地鐵大通站7號出口步行5分鐘</span>
+          </div>
+          <div class="ref-row">
+            <span class="ref-destination">大通公園</span>
+            <span class="ref-station">地鐵大通站即達（公園內）</span>
+          </div>
+          <div class="ref-row">
+            <span class="ref-destination">北海道廳舊本廳舍</span>
+            <span class="ref-station">JR札幌站南口步行8分鐘</span>
+          </div>
+          <div class="ref-row">
+            <span class="ref-destination">白色戀人公園</span>
+            <span class="ref-station">地鐵東西線宮之澤站步行7分鐘</span>
+          </div>
+          <div class="ref-row">
+            <span class="ref-destination">藻岩山</span>
+            <span class="ref-station">JR札幌站搭巴士或市電至纜車站前</span>
+          </div>
+          <div class="ref-row">
+            <span class="ref-destination">狸小路</span>
+            <span class="ref-station">地鐵薄野站步行3分鐘</span>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .page-hero {
+    background: linear-gradient(135deg, var(--secondary) 0%, #2d2d4a 100%);
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .hero-content p {
+    opacity: 0.85;
+    font-size: 1.15rem;
+  }
+
+  main {
+    padding-bottom: 4rem;
+  }
+
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  .guide-section {
+    padding: 4rem 0;
+  }
+
+  .alt-bg {
+    background-color: #f0ede8;
+    margin: 0 -1.5rem;
+    padding: 4rem 1.5rem;
+    border-radius: 0;
+  }
+
+  .guide-section:nth-child(even):not(.alt-bg) {
+    border-top: 1px solid #eee;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+    color: var(--text-dark);
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .section-intro {
+    text-align: center;
+    color: #555;
+    margin-bottom: 2rem;
+    font-size: 1.05rem;
+  }
+
+  /* Transport Cards */
+  .transport-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .transport-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.75rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    display: flex;
+    gap: 1.25rem;
+  }
+
+  .card-icon {
+    font-size: 2rem;
+    flex-shrink: 0;
+  }
+
+  .card-content h3 {
+    font-size: 1.15rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+  }
+
+  .card-meta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .duration {
+    color: #666;
+    font-size: 0.9rem;
+  }
+
+  .price {
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+
+  .card-content p {
+    color: #555;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 0.75rem;
+  }
+
+  .route-info {
+    display: flex;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+  }
+
+  .route-label {
+    background: var(--bg-cream);
+    color: #666;
+    padding: 0.15rem 0.5rem;
+    border-radius: 4px;
+  }
+
+  /* Subway Lines */
+  .subway-lines {
+    display: grid;
+    gap: 1.25rem;
+    margin-bottom: 2rem;
+  }
+
+  .line-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+
+  .line-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .line-name {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--text-dark);
+  }
+
+  .line-color {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+  }
+
+  .line-stations {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 0.75rem;
+  }
+
+  .line-stations span:not(:has(span)) {
+    background: #f5f5f5;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+  }
+
+  .line-desc {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.5;
+  }
+
+  /* Fare Table */
+  .fare-table {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+
+  .fare-table h4 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+  }
+
+  .fare-items {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .fare-item {
+    background: var(--bg-cream);
+    padding: 0.75rem 1.25rem;
+    border-radius: 8px;
+    text-align: center;
+  }
+
+  .fare-item span {
+    display: block;
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 0.25rem;
+  }
+
+  .fare-item strong {
+    font-size: 1.1rem;
+    color: var(--primary);
+  }
+
+  .fare-note {
+    font-size: 0.85rem;
+    color: #555;
+  }
+
+  .fare-note a {
+    color: var(--primary);
+    text-decoration: underline;
+  }
+
+  /* Transit Options */
+  .transit-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.25rem;
+  }
+
+  .option-item {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    display: flex;
+    gap: 1rem;
+  }
+
+  .option-icon {
+    font-size: 1.75rem;
+    flex-shrink: 0;
+  }
+
+  .option-content h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+  }
+
+  .option-content p {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.5;
+  }
+
+  /* Tips Grid */
+  .tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .tip-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+
+  .tip-card h3 {
+    font-size: 1.05rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-dark);
+  }
+
+  .tip-card p {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.6;
+  }
+
+  .tip-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .tip-card li {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.6;
+    padding-left: 1.25rem;
+    position: relative;
+    margin-bottom: 0.5rem;
+  }
+
+  .tip-card li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+  }
+
+  /* Quick Ref Table */
+  .quick-ref-table {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+
+  .ref-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid #eee;
+  }
+
+  .ref-row:last-child {
+    border-bottom: none;
+  }
+
+  .ref-row:nth-child(even) {
+    background-color: #fafafa;
+  }
+
+  .ref-destination {
+    font-weight: 600;
+    color: var(--text-dark);
+  }
+
+  .ref-station {
+    color: #555;
+    font-size: 0.9rem;
+    text-align: right;
+  }
+
+  @media (max-width: 600px) {
+    .ref-row {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.25rem;
+    }
+
+    .ref-station {
+      text-align: left;
+    }
+
+    .fare-items {
+      flex-direction: column;
+    }
+
+    .alt-bg {
+      margin: 0;
+      border-radius: 0;
+    }
+  }
+</style>
