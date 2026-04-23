@@ -96,18 +96,30 @@ const BASE = '/sapporo-trip';
       <div class="map-section">
         <h2 class="map-title">📍 地圖位置</h2>
         <div class="map-embed">
-          <iframe
-            width="100%"
-            height="350"
-            style="border:0; border-radius: 12px;"
-            loading="lazy"
-            allowfullscreen
-            src={`https://www.google.com/maps?q=${encodeURIComponent(restaurant.data.address)}&output=embed&hl=zh-TW`}
-            title={`${displayName} 地圖`}
-          ></iframe>
+          {restaurant.data.latitude && restaurant.data.longitude ? (
+            <iframe
+              width="100%"
+              height="350"
+              style="border:0; border-radius: 12px;"
+              loading="lazy"
+              allowfullscreen
+              src={`https://www.google.com/maps?q=${restaurant.data.latitude},${restaurant.data.longitude}&output=embed&hl=zh-TW`}
+              title={`${displayName} 地圖`}
+            ></iframe>
+          ) : (
+            <iframe
+              width="100%"
+              height="350"
+              style="border:0; border-radius: 12px;"
+              loading="lazy"
+              allowfullscreen
+              src={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(restaurant.data.name + ' ' + restaurant.data.address)}&output=embed&hl=zh-TW`}
+              title={`${displayName} 地圖`}
+            ></iframe>
+          )}
         </div>
         <div class="map-link">
-          <a href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(restaurant.data.address)}`} target="_blank" rel="noopener" class="btn-map">
+          <a href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(restaurant.data.name + ' ' + restaurant.data.address)}`} target="_blank" rel="noopener" class="btn-map">
             在 Google Maps 中開啟 →
           </a>
         </div>

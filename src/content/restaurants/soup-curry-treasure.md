@@ -11,6 +11,8 @@ opening_hours: "11:30-15:00、17:30-21:00（售完即止）"
 price_range: "¥950~1350"
 official_url: https://tabelog.com/hokkaido/A0101/A010101/1000008/
 reservation: 可接受電話預約
+latitude: 43.049247
+longitude: 141.337839
 image: /images/restaurants/soup-curry-treasure.jpg
 image_credit: " photo by Heber Gonzalez/Unsplash"
 featured: false

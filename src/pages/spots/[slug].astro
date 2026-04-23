@@ -79,26 +79,38 @@ const BASE = '/sapporo-trip';
         </aside>
       </div>
 
-      <!-- Google Maps -->
-      <div class="map-section">
-        <h2 class="map-title">📍 地圖位置</h2>
-        <div class="map-embed">
-          <iframe
-            width="100%"
-            height="350"
-            style="border:0; border-radius: 12px;"
-            loading="lazy"
-            allowfullscreen
-            src={`https://www.google.com/maps?q=${encodeURIComponent(spot.data.address)}&output=embed&hl=zh-TW`}
-            title={`${spot.data.name} 地圖`}
-          ></iframe>
-        </div>
-        <div class="map-link">
-          <a href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(spot.data.address)}`} target="_blank" rel="noopener" class="btn-map">
-            在 Google Maps 中開啟 →
-          </a>
-        </div>
-      </div>
+          <!-- Google Maps -->
+          <div class="map-section">
+            <h2 class="map-title">📍 地圖位置</h2>
+            <div class="map-embed">
+              {spot.data.latitude && spot.data.longitude ? (
+                <iframe
+                  width="100%"
+                  height="350"
+                  style="border:0; border-radius: 12px;"
+                  loading="lazy"
+                  allowfullscreen
+                  src={`https://www.google.com/maps?q=${spot.data.latitude},${spot.data.longitude}&output=embed&hl=zh-TW`}
+                  title={`${spot.data.name} 地圖`}
+                ></iframe>
+              ) : (
+                <iframe
+                  width="100%"
+                  height="350"
+                  style="border:0; border-radius: 12px;"
+                  loading="lazy"
+                  allowfullscreen
+                  src={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(spot.data.name + ' ' + spot.data.address)}&output=embed&hl=zh-TW`}
+                  title={`${spot.data.name} 地圖`}
+                ></iframe>
+              )}
+            </div>
+            <div class="map-link">
+              <a href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(spot.data.name + ' ' + spot.data.address)}`} target="_blank" rel="noopener" class="btn-map">
+                在 Google Maps 中開啟 →
+              </a>
+            </div>
+          </div>
     </div>
   </main>
 
