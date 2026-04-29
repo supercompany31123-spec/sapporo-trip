@@ -14,6 +14,8 @@ reservation: 不接受預約
 image: /images/restaurants/seafood-donburi-aino.jpg
 image_credit: " photo by Marco Garro/Unsplash"
 featured: false
+latitude: 43.0655
+longitude: 141.3475
 ---
 
 ## 關於海鮮蓋飯 愛の

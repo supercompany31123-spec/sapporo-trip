@@ -14,6 +14,8 @@ reservation: 無需預約（團體30人以上請事前聯繫）
 image: /images/restaurants/nikka-whisky-factory.jpg
 image_credit: " photo by Maksim Kahuchkin/Unsplash"
 featured: false
+latitude: 43.1339
+longitude: 140.9910
 ---
 
 ## 關於Nikka威士忌 余市蒸溜所

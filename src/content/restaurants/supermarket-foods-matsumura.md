@@ -14,6 +14,8 @@ reservation: 無需預約
 image: /images/restaurants/supermarket-foods-matsumura.jpg
 image_credit: " photo by Dilyan Kozuharov/Unsplash"
 featured: false
+latitude: 43.0688
+longitude: 141.3503
 ---
 
 ## 關於超市食品 松村

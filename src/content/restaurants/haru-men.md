@@ -14,6 +14,8 @@ reservation: 不接受預約
 image: /images/restaurants/haru-men.jpg
 image_credit: " photo by Calum Lewis/Unsplash"
 featured: true
+latitude: 43.0588
+longitude: 141.3465
 ---
 
 ## 關於はる樹

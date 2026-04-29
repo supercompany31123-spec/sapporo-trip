@@ -14,6 +14,8 @@ reservation: 可接受電話預約
 image: /images/restaurants/western-bakery-paver.jpg
 image_credit: " photo by Tetiana Gvat/Unsplash"
 featured: false
+latitude: 43.0620
+longitude: 141.3510
 ---
 
 ## 關於西洋菓子 paaver

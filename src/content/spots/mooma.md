@@ -11,6 +11,8 @@ official_url: https://mooma.jp/
 image: /images/spots/mooma.jpg
 image_credit: " photo by John Salvino/Unsplash"
 featured: false
+latitude: 43.0508
+longitude: 141.3550
 ---
 
 ## 關於MOOMA

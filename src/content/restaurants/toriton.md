@@ -14,6 +14,8 @@ reservation: 可接受電話/網路預約
 image: /images/restaurants/toriton.jpg
 image_credit: " photo by Calum Lewis/Unsplash"
 featured: false
+latitude: 43.0595
+longitude: 141.3490
 ---
 
 ## 關於PiShiKO トリトン

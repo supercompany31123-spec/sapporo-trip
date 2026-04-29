@@ -11,6 +11,8 @@ official_url: https://www.shiroikoibito.jp/park/
 image: /images/spots/shiroi-koibito-park.jpg
 image_credit: " photo by Eilis Garvey/Unsplash"
 featured: false
+latitude: 43.0736
+longitude: 141.3045
 ---
 
 ## 關於白色戀人公園

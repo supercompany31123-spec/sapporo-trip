@@ -11,6 +11,8 @@ official_url: https://moiwa.sapporo-kankou.com/
 image: /images/spots/mount-moiwa.jpg
 image_credit: " photo by Tianshu Liu/Unsplash"
 featured: true
+latitude: 43.0200
+longitude: 141.3000
 ---
 
 ## 關於藻岩山

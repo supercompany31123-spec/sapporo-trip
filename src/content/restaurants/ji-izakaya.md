@@ -14,6 +14,8 @@ reservation: 可接受預約
 image: /images/restaurants/ji-izakaya.jpg
 image_credit: " photo by Tom Barrett/Unsplash"
 featured: false
+latitude: 43.0679
+longitude: 141.3500
 ---
 
 ## 關於炉端料理 じぃ

@@ -11,6 +11,8 @@ official_url: https://www.tv-tower.co.jp/
 image: /images/spots/sapporo-tv-tower.jpg
 image_credit: " photo by Jezael Melgoza/Unsplash"
 featured: true
+latitude: 43.061104
+longitude: 141.356430
 ---
 
 ## 關於札幌電視塔
