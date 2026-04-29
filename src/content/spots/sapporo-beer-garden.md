@@ -11,6 +11,8 @@ official_url: https://www.sapporo-beer-garden.jp/
 image: /images/spots/sapporo-beer-garden.jpg
 image_credit: " photo by Thomas Habr/Unsplash"
 featured: false
+latitude: 43.0698
+longitude: 141.3610
 ---
 
 ## 關於札幌啤酒園

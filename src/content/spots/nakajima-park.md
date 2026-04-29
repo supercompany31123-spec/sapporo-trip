@@ -11,6 +11,8 @@ official_url: https://www.sapporo-park.or.jp/nakajima/
 image: /images/spots/nakajima-park.jpg
 image_credit: " photo by Lukas Rodriguez/Unsplash"
 featured: false
+latitude: 43.0500
+longitude: 141.3540
 ---
 
 ## 關於中島公園

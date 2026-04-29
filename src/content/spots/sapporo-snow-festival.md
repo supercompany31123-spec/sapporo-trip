@@ -11,6 +11,8 @@ official_url: https://www.sapporo-snowfestival.jp/
 image: /images/spots/sapporo-snow-festival.jpg
 image_credit: " photo by Tianshu Liu/Unsplash"
 featured: true
+latitude: 43.0615
+longitude: 141.3470
 ---
 
 ## 關於札幌雪祭

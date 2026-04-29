@@ -11,6 +11,8 @@ official_url: https://www.pref.hokkaido.lg.jp/sum/kensi/hktou/
 image: /images/spots/hokkaido-government-office.jpg
 image_credit: " photo by David Martin/Unsplash"
 featured: false
+latitude: 43.0667
+longitude: 141.3495
 ---
 
 ## 關於北海道廳舊本廳舍

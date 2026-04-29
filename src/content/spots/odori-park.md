@@ -11,6 +11,8 @@ official_url: https://www.sapporo-park.or.jp/obori/
 image: /images/spots/odori-park.jpg
 image_credit: " photo by John Salvino/Unsplash"
 featured: true
+latitude: 43.0615
+longitude: 141.3470
 ---
 
 ## 關於大通公園

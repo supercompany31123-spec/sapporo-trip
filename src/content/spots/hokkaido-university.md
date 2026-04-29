@@ -11,6 +11,8 @@ official_url: https://www.hokudai.ac.jp/
 image: /images/spots/hokkaido-university.jpg
 image_credit: " photo by Ryo F./Unsplash"
 featured: false
+latitude: 43.0725
+longitude: 141.3410
 ---
 
 ## 關於北海道大學
